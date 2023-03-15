@@ -1,0 +1,42 @@
+#sent-welcome-table {
+    font-size: 13px;
+}
+
+.sent-welcome-page-table {
+    ::ng-deep .p-datatable table {
+        max-height: 490px;
+    }
+}
+
+.card-screen-caption {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.pdf-button {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.search-image {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.excel-button {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.table-row-style {
+    height: 30px;
+}

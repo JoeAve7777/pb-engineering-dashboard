@@ -1,0 +1,58 @@
+#recent-impersonation-table {
+    font-size: 11px;
+}
+
+.recent-impersonation-table {
+    ::ng-deep .p-datatable table {
+        max-height: 290px;
+    }
+}
+
+.table-row-style {
+    height: 25px;
+}
+
+.card-screen-caption {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.search-image {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.search-filter {
+    height: 25px;
+}
+
+// :host ::ng-deep {
+//     .hide-next .p-paginator-next {
+//         visibility: hidden;
+//     }
+// }
+
+// :host ::ng-deep {
+//   .hide-next .p-paginator-last {
+//       visibility: hidden;
+//   }
+// }
+// :host ::ng-deep {
+//   .hide-next .p-paginator-first {
+//       visibility: hidden;
+//   }
+// }
+
+// :host ::ng-deep {
+//   .hide-next .p-paginator-prev {
+//       visibility: hidden;
+//   }
+// }
+
+// :host ::ng-deep {
+//   .hide-next .p-paginator-page {
+//       visibility: hidden;
+//   }
+// }

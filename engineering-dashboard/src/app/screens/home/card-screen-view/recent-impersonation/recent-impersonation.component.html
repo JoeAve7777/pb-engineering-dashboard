@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-5">
+        <label class="card-screen-caption">{{ screenCaption }}</label>
+    </div>
+    <div class="col-7">
+        <table>
+            <tr>
+                <td>
+                    <a (click)="onExportPdf()"  title="Export to PDF" href="#"><i class="fa fa-file-pdf-o fa-lg mr-3"></i></a>
+                </td>
+                <td>
+                    <a  (click)="onExportExcel()" title="Export to Excel" href="#"><i class="fa fa-file-excel-o fa-lg mr-3"></i></a>
+                </td>
+                <td>
+                    <input title="Search Keyword"
+                        class="form-control search-filter"
+                        pInputText
+                        type="text"
+                        (input)="
+                        dtRecentImpersonation.filterGlobal($event.target.value, 'contains')
+                        "
+                        placeholder="Search keyword"
+                    />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-12">
+        <div>
+            <p-table
+                class="recent-impersonation"
+                id="recent-impersonation-id"
+                [ngClass]="[
+                    'ui-table-bordered',
+                    'ui-table-striped',
+                    'ui-table-hover',
+                    'ui-table-open'
+                ]"
+                #dtRecentImpersonation
+                (onFilter)="onFilter($event, dtRecentImpersonation)"
+                [value]="welcomeEmailsData"
+                [paginator]="true"
+                dataKey="id"
+                [rows]="10"
+                [showCurrentPageReport]="true"
+                [scrollable]="true"
+                [rowsPerPageOptions]="[5, 10, 25, 50]"
+                currentPageReportTemplate="Rows {first} to {last} of {totalRecords}"
+                [globalFilterFields]="['datetimestamp', 'email']"
+            >
+                <ng-template pTemplate="header">
+                    <tr class="table-row-style">
+                        <th pSortableColumn="datetimestamp" style="width: 20%">
+                            TIMESTAMP
+                            <p-sortIcon field="datetimestamp"></p-sortIcon>
+                        </th>
+                        <th pSortableColumn="email" style="width: 20%">
+                            EMAIL <p-sortIcon field="email"></p-sortIcon>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-welcomeEmailsData>
+                    <tr style="height: 25px">
+                        <td>
+                            {{
+                                welcomeEmailsData.datetimestamp
+                                    | date : "MMM d, y, h:mm:ss a"
+                            }}
+                        </td>
+                        <td>
+                            <a
+                                href="mailto:{{
+                                    welcomeEmailsData.email
+                                }}?subject=Recent Login Subject
+                            "
+                                >{{ welcomeEmailsData.email }}</a
+                            >
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

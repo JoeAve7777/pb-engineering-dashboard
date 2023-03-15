@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "joe",
+      "password": "ave",
+      "email": "joseph.avallone@pb.com",
+      "firstName": "Joe",
+      "lastName": "Avallone"
+    },
+    {
+      "id": 2,
+      "username": "enzo",
+      "password": "enzo",
+      "email": "enzo.maini@pb.com",
+      "firstName": "Enzo",
+      "lastName": "Maini"
+    }
+  ],
+  "servers": [
+    {
+      "id": 1,
+      "name": "Server 1",
+      "allocate": "John Doe",
+      "status": "Not Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 2,
+      "name": "Server 2",
+      "allocate": "Mary Jane",
+      "status": "Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 3,
+      "name": "Server 3",
+      "allocate": "Billy Jones",
+      "status": "In Use",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 4,
+      "name": "Server 4",
+      "allocate": "Sandy Smith",
+      "status": "Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 5,
+      "name": "Server 5",
+      "allocate": "Bobby Lee",
+      "status": "In Use",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 6,
+      "name": "Server 6",
+      "allocate": "Sam Clegg",
+      "status": "In Use",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 7,
+      "name": "Server 7",
+      "allocate": "Johnny Cash",
+      "status": "Not Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 8,
+      "name": "Server 8",
+      "allocate": "Billy Martin",
+      "status": "In Use",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 9,
+      "name": "Server 9",
+      "allocate": "Victor Brady",
+      "status": "Not Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    },
+    {
+      "id": 10,
+      "name": "Server 10",
+      "allocate": "John Deere",
+      "status": "Not Available",
+      "redirectUrl": "https://www.google.com/",
+      "instanceId": "i-0a2e8cb4ca6f1a9cd"
+    }
+  ]
+}

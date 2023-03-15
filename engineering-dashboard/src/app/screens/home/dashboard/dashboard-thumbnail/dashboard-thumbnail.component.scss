@@ -1,0 +1,16 @@
+.scrollable-item {
+    cursor: pointer;
+    display: inline-block;
+    height: 4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.scrollable-item-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+

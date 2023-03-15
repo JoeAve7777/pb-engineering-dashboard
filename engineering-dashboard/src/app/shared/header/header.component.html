@@ -1,0 +1,66 @@
+<header class="bg-brand-header fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler p-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" routerLink="/home"> {{ title }} </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item"></li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+              <li class="nav-item">
+                <!-- User menu -->
+              </li>
+
+              <li class="nav-item dropdown menu-user">
+                <a
+                  href=""
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-labelledby="username-offscreen"
+                  aria-expanded="false"
+                >
+                  <div class="d-none d-lg-block header-user-lockup">
+                    <div class="header-username">
+                      {{ this.user.firstName | titlecase }}&nbsp;{{
+                        this.user.lastName | titlecase
+                      }}
+                    </div>
+                  </div>
+
+                  <span class="d-lg-none" id="username-offscreen">
+                    <i
+                      class="pbi-icon-mini pbi-user-circle"
+                      aria-hidden="true"
+                    ></i
+                    >&nbsp;{{ this.user.firstName }}&nbsp;{{
+                      this.user.lastName
+                    }}
+                  </span>
+                </a>
+
+                <div class="dropdown-menu" role="menu">
+                  <div class="divider" role="separator"></div>
+                  <a class="dropdown-item" [routerLink]="homeRoute">Sign Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

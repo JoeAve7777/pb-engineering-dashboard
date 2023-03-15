@@ -1,0 +1,9 @@
+<div class="row">
+    <ng-container *ngFor="let item of dashboardCardItems">
+        <div class="col-2" *ngIf="item.isAvailable">
+            <app-dashboard-thumbnail
+                [dashboardCardItem]="item"
+            ></app-dashboard-thumbnail>
+        </div>
+    </ng-container>
+</div>

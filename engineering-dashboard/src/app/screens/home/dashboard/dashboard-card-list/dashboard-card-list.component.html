@@ -1,0 +1,11 @@
+<div class="row">
+    <ng-container *ngFor="let item of dashboardCardItems">
+        <div
+            class="col-md-4"
+            *ngIf="item.isAvailable === true && item.isVisible === true"
+        >
+            <app-dashboard-card [dashboardCardItem]="item" (dashboardCardExpanded)="onDashboardCardExpanded($event)"></app-dashboard-card
+            ><br />
+        </div>
+ </ng-container>
+</div>

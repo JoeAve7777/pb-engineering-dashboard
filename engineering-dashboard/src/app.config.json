@@ -1,0 +1,58 @@
+{
+    "title": "PB Engineering Dashboard",
+    "version": "1.0.12",
+    "copyRight": "©1996-2022 Pitney Bowes Inc. All rights reserved.",
+    "apiBaseUrl": "http://localhost:4000/",
+    "apiAuthenticate": "https://g5td3nfq5m.execute-api.us-east-1.amazonaws.com/dev/fetchuserdetails?email=@email&password=@password",
+    "apiSentWelcomeEmail": "https://63fe4c94370fe830d9d21389.mockapi.io/api/v1/welcomeemails",
+    "jsonData": [
+        {
+            "id": "1",
+            "label": "Sent Welcome Emails",
+            "iconClass": "fa-share",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        },
+        {
+            "id": "2",
+            "label": "Recent Login",
+            "iconClass": "fa-sharp fa-solid fa-user",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        },
+        {
+            "id": "3",
+            "label": "Recent Impersonation",
+            "iconClass": "fa-regular fa-user-secret",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        },
+        {
+            "id": "4",
+            "label": "New Guam Users",
+            "iconClass": "fa-duotone fa-users",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        },
+        {
+            "id": "5",
+            "label": "Migration Welcome Emails",
+            "iconClass": "fa-duotone fa-users",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        },
+        {
+            "id": "6",
+            "label": "Recent Device Usage",
+            "iconClass": "fa-duotone fa-users",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true
+        }
+    ]
+}

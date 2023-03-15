@@ -1,0 +1,107 @@
+<div class="row">
+    <div class="col-10">
+        <table>
+            <tr>
+                <td>
+                    <a href="#" (click)="exportPdf()">
+                        <i
+                            title="Export to PDF"
+                            class="pi pi-file-pdf pdf-button"
+                        ></i
+                    ></a>
+                    <a href="#" (click)="exportExcel()">
+                        <i
+                            title="Export to Excel"
+                            class="pi pi-file-excel excel-button"
+                        ></i
+                    ></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-2">
+        <table>
+            <tr>
+                <td>
+                    <i title="Search" class="pi pi-search search-image"></i>
+                </td>
+                <td>
+                    <input
+                        class="form-control"
+                        pInputText
+                        type="text"
+                        (input)="
+                            dt2.filterGlobal($event.target.value, 'contains')
+                        "
+                        placeholder="Search keyword"
+                    />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-12">
+        <label class="card-screen-caption">{{ screenCaption }}</label>
+    </div>
+
+    <div class="col-12">
+        <div>
+            <p-table
+                class="sent-welcome-page-table"
+                id="sent-welcome-table"
+                [ngClass]="[
+                    'ui-table-bordered',
+                    'ui-table-striped',
+                    'ui-table-hover',
+                    'ui-table-open'
+                ]"
+                #dt2
+                (onFilter)="onFilter($event, dt2)"
+                [value]="welcomeEmailsData"
+                [paginator]="true"
+                dataKey="id"
+                [rows]="10"
+                [showCurrentPageReport]="true"
+                [scrollable]="true"
+                [rowsPerPageOptions]="[5, 10, 25, 50]"
+                currentPageReportTemplate="Rows {first} to {last} of {totalRecords}"
+                [globalFilterFields]="['datetimestamp', 'email']"
+            >
+                <ng-template pTemplate="header">
+                    <tr class="table-row-style">
+                        <th pSortableColumn="datetimestamp" style="width: 20%">
+                            TIMESTAMP
+                            <p-sortIcon field="datetimestamp"></p-sortIcon>
+                        </th>
+                        <th pSortableColumn="email" style="width: 20%">
+                            EMAIL <p-sortIcon field="email"></p-sortIcon>
+                        </th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-welcomeEmailsData>
+                    <tr class="table-row-style">
+                        <td>
+                            {{
+                                welcomeEmailsData.datetimestamp
+                                    | date : "MMM d, y, h:mm:ss a"
+                            }}
+                        </td>
+                        <td>
+                            <a
+                                href="mailto:{{
+                                    welcomeEmailsData.email
+                                }}?subject=Recent Login Subject
+                            "
+                                >{{ welcomeEmailsData.email }}</a
+                            >
+                        </td>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="emptymessage">
+                    <tr>
+                        <td colspan="5">No customers found.</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+</div>

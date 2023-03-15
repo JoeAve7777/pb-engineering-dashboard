@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-12" style="min-height: 330px;">
+        <pbds-dataviz-line
+            [data]="medium"
+            width="1200"
+            height="500"
+            [area]="true"
+            xAxisFormatString="%b %Y"
+            yAxisFormatString=".1s"
+            tooltipHeadingFormatString="%B %e, %Y"
+            tooltipValueFormatType="number"
+            tooltipValueFormatString=".2s"
+            (tooltipHovered)="onHover($event)"
+            legendPosition="bottom"
+        ></pbds-dataviz-line>
+    </div>
+</div>

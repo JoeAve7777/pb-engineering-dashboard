@@ -1,0 +1,85 @@
+<p-card class="card p-2 mb-1 shadow rounded">
+    <div class="p-card-body">
+        <div class="p-card-title">
+            <pbds-progress-spinner
+                title="Processing"
+                style="margin-right: 20px"
+                size="24"
+                *ngIf="showSpinner"
+            ></pbds-progress-spinner>
+            <i
+                class="fa {{ dashboardCardItem.iconClass }} fa-2x mr-3"
+                aria-hidden="true"
+            ></i
+            ><b>{{ dashboardCardItem.label }}</b>
+            <span style="float: right; cursor: pointer; font-weight: bold">
+                 <i title="Expand"
+                    class="fa fa-expand fa-lg mr-3"
+                    aria-hidden="true"
+                    *ngIf="isExpandable"
+                    (click)="onExpandClick()"
+                ></i>
+                <i title="Close"
+                    class="fa fa-times fa-lg"
+                    aria-hidden="true"
+                    (click)="onClick()"
+                ></i>
+            </span>
+            <hr />
+        </div>
+    </div>
+    <div [ngSwitch]="dashboardCardItem.id">
+        <div *ngSwitchCase="'1'">
+            <app-sent-welcome-email
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-sent-welcome-email>
+        </div>
+
+        <div *ngSwitchCase="'2'">
+            <app-recent-logins
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-recent-logins>
+        </div>
+
+        <div *ngSwitchCase="'3'">
+            <app-recent-impersonation
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-recent-impersonation>
+        </div>
+        
+        <div *ngSwitchCase="'4'">
+            <app-new-guam-users
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-new-guam-users>
+        </div>
+
+        <div *ngSwitchCase="'5'">
+            <app-migration-welcome-email
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-migration-welcome-email>
+        </div>
+        
+        <div *ngSwitchCase="'6'">
+            <app-recent-device-usage
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-recent-device-usage>
+        </div>
+        <!-- <div *ngSwitchCase="'2'">
+            <app-bar-chart-widget
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-bar-chart-widget>
+        </div> -->
+
+        <div *ngSwitchDefault>
+            <p>
+                <!-- Future Release -->
+            </p>
+        </div>
+    </div>
+</p-card>

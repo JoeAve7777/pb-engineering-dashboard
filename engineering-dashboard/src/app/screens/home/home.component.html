@@ -1,0 +1,62 @@
+<div class="row" style="margin-top: 4.3rem; width: 100%; height: auto">
+    <div
+        class="col-12 tool-bar"
+        [ngStyle]="{
+            display:
+                showSideBar === true && showExpandedVersion === false
+                    ? 'block'
+                    : 'none'
+        }"
+    >
+        <app-dashboard-thumbnail-list
+            [dashboardCardItems]="dashboardCardItems"
+        ></app-dashboard-thumbnail-list>
+    </div>
+
+    <div class="col-12 shim" (mouseenter)="onShimMouseEnter()"></div>
+    <div class="col-12">
+        <div
+            (mouseenter)="onCardListMouseEnter()"
+            [ngStyle]="{
+                display: showExpandedVersion === false ? 'block' : 'none'
+            }"
+            style="padding: 1rem"
+        >
+            <div class="row">
+                <div class="col-12">
+                    <app-dashboard-card-list
+                        [dashboardCardItems]="dashboardCardItems"
+                        (dashboardCardExpanded)="
+                            onDashboardCardExpanded($event)
+                        "
+                    ></app-dashboard-card-list>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div
+            style="padding: 10px"
+            [ngStyle]="{
+                display: showExpandedVersion === true ? 'block' : 'none'
+            }"
+        >
+            <button
+                style="margin-bottom: 10px"
+                type="button"
+                class="btn btn-primary btn-sm"
+                (click)="closeExpandedWindow()"
+            >
+                Close
+            </button>
+
+            <div [ngSwitch]="expandedId">
+                <div *ngSwitchCase="'1'">
+                    <app-sent-welcome-email-page></app-sent-welcome-email-page>
+                </div>
+                <div *ngSwitchDefault>NOT SURE WHAT TO SHOW</div>
+            </div>
+        </div>
+    </div>
+</div>
