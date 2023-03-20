@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     constructor(private appConfiguration: AppConfiguration) {}
 
     ngOnInit(): void {
-        this.dashboardCardItems = this.appConfiguration.jsonData;
+        this.dashboardCardItems = this.appConfiguration.cardsMetaData;
     }
 
     showSideBar = false;

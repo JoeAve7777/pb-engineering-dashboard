@@ -1,0 +1,319 @@
+
+var GuamUsers = [
+    {
+        "id": 1,
+        "email": "joe.smith@aol.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 2,
+        "email": "mary.wilson@yahoo.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 3,
+        "email": "gina.palmer@gmail.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 4,
+        "email": "bobby.jean@bing.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 5,
+        "email": "sue.dye@yahoo.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 6,
+        "email": "enzo.balini@gmail.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 7,
+        "email": "kevin.durant@aol.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 8,
+        "email": "paul.page@godaddy.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 9,
+        "email": "luis.romero@itsoultions.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 10,
+        "email": "dale.long@netflix.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 11,
+        "email": "ashly.wilson@amazon.com",
+        "dateTime": new Date()
+    }
+]
+
+//---------------------------------------------------------------------------------------------------------------------
+
+var MigrationEmails = [
+    {
+        "id": 1,
+        "email": "joe.smith@aol.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 2,
+        "email": "mary.wilson@yahoo.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 3,
+        "email": "gina.palmer@gmail.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 4,
+        "email": "bobby.jean@bing.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 5,
+        "email": "sue.dye@yahoo.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 6,
+        "email": "enzo.balini@gmail.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 7,
+        "email": "kevin.durant@aol.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 8,
+        "email": "paul.page@godaddy.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 9,
+        "email": "luis.romero@itsoultions.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 10,
+        "email": "dale.long@netflix.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 11,
+        "email": "ashly.wilson@amazon.com",
+        "template": "??????????",
+        "dateTime": new Date()
+    }
+]
+
+//---------------------------------------------------------------------------------------------------------------------
+
+var RecentDeviceUsages = [
+    {
+        "id": 1,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 2,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 3,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 4,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 5,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 6,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 7,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 8,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 9,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 10,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    },
+    {
+        "id": 11,
+        "deviceName": "??????????",
+        "dateTime": new Date()
+    }
+]
+
+//---------------------------------------------------------------------------------------------------------------------
+
+var RecentImpersonations = [
+    {
+        "id": 1,
+        "email": "joe.smith@aol.com",
+        "impersonationEmail": "ashly.wilson@amazon.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 2,
+        "email": "mary.wilson@yahoo.com",
+        "impersonationEmail": "dale.long@netflix.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 3,
+        "email": "johnny.avalon@yahoo.com",
+        "impersonationEmail": "luis.romero@itsoultions.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 4,
+        "email": "bobby.jean@bing.com",
+        "impersonationEmail": "paul.page@godaddy.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 5,
+        "email": "sue.dye@yahoo.com",
+        "impersonationEmail": "kevin.durant@aol.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 6,
+        "email": "sue.dye@yahoo.com",
+        "impersonationEmail": "joe.smith@aol.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 7,
+        "email": "kevin.durant@aol.com",
+        "impersonationEmail": "mary.wilson@yahoo.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 8,
+        "email": "paul.page@godaddy.com",
+        "impersonationEmail": "johnny.avalon@yahoo.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 9,
+        "email": "luis.romero@itsoultions.com",
+        "impersonationEmail": "bobby.jean@bing.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 10,
+        "email": "dale.long@netflix.com",
+        "impersonationEmail": "sue.dye@yahoo.com",
+        "dateTime": new Date()
+    },
+    {
+        "id": 11,
+        "email": "ashly.wilson@amazon.com",
+        "impersonationEmail": "sue.dye@yahoo.com",
+        "dateTime": new Date()
+    }
+]
+
+//---------------------------------------------------------------------------------------------------------------------
+
+var RecentLogins = [
+    {
+        "id": 1,
+        "email": "joe.smith@aol.com",
+        "loginCount": 5
+    },
+    {
+        "id": 2,
+        "email": "mary.wilson@yahoo.com",
+        "loginCount": 10
+    },
+    {
+        "id": 3,
+        "email": "gina.palmer@gmail.com",
+        "loginCount": 15
+    },
+    {
+        "id": 4,
+        "email": "bobby.jean@bing.com",
+        "loginCount": 20
+    },
+    {
+        "id": 5,
+        "email": "sue.dye@yahoo.com",
+        "loginCount": 25
+    },
+    {
+        "id": 6,
+        "email": "enzo.balini@gmail.com",
+        "loginCount": 30
+    },
+    {
+        "id": 7,
+        "email": "kevin.durant@aol.com",
+        "loginCount": 35
+    },
+    {
+        "id": 8,
+        "email": "paul.page@godaddy.com",
+        "loginCount": 40
+    },
+    {
+        "id": 9,
+        "email": "luis.romero@itsoultions.com",
+        "loginCount": 45
+    },
+    {
+        "id": 10,
+        "email": "dale.long@netflix.com",
+        "loginCount": 50
+    },
+    {
+        "id": 11,
+        "email": "ashly.wilson@amazon.com",
+        "loginCount": 55
+    }
+]

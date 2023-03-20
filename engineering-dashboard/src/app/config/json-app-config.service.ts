@@ -21,7 +21,7 @@ export class JsonAppConfigService extends AppConfiguration {
         this.version = data?.version;
         this.apiAuthenticate = data?.apiAuthenticate;
         this.apiSentWelcomeEmail = data?.apiSentWelcomeEmail;
-        this.jsonData = data?.jsonData;
+        this.cardsMetaData = data?.cardsMetaData;
       })
       .catch(() => {
         console.error("Could not load configuration file");

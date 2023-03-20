@@ -5,5 +5,5 @@ export abstract class AppConfiguration {
   version?: string;
   apiAuthenticate?: string;
   apiSentWelcomeEmail?: string;
-  jsonData?: any;
+  cardsMetaData?: any;
 }
