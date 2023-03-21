@@ -12,9 +12,9 @@ import { HttpErrorResponse } from "@angular/common/http";
 import { Subscription } from "rxjs";
 
 import { DashboardCardItem } from "../../dashboard/dashboard-card-item.model";
-import { WelcomeEmail } from "@app/interfaces/welcome-email.interface";
-import { SentWelcomeEmailService } from "@app/services/sent-welcome-email.service";
 import { ExportService } from "@app/services/export.service";
+import { RecentLoginsService } from "@app/services/recent-logins.service";
+import { RecentLogin } from "@app/interfaces/recent-login.interface";
 
 @Component({
     selector: "app-recent-logins",
@@ -25,86 +25,51 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    welcomeEmailOb$!: Subscription;
-    welcomeEmailsData: WelcomeEmail[] = [];
+    recentLoginsOb$!: Subscription;
+    recentLoginsData: RecentLogin[] = [];
     filteredValues: any[] = [];
     cols: any[];
 
     screenCaption: string = "Since 1 month ago";
 
     constructor(
-        private sentWelcomeEmailService: SentWelcomeEmailService,
+        private recentLoginsService: RecentLoginsService,
         private datePipe: DatePipe,
         private exportService: ExportService
     ) {}
 
     ngOnInit(): void {
         this.setupCols();
-        this.loadWelcomeEmailData();
+        this.loadData();
     }
 
     private setupCols() {
         this.cols = [
-            { dataKey: "datetimestamp", title: "Timestamp" },
             { dataKey: "email", title: "Email" },
+            { dataKey: "loginCount", title: "LoginCount" },
         ];
     }
-    loadWelcomeEmailData() {
+    loadData() {
         document.body.style.cursor = "wait";
 
-        this.welcomeEmailOb$ = this.sentWelcomeEmailService.getAll().subscribe({
-            next: (data) => {
-                if (data !== undefined && data !== null) {
-                    this.welcomeEmailsData = data.sort((a, b) =>
-                        a.datetimestamp > b.datetimestamp ? -1 : 1
-                    );
-
-                    this.welcomeEmailsData = this.formatValues();
-                    this.filteredValues = this.welcomeEmailsData;
-                }
-            },
-            error: (error: HttpErrorResponse) => {
-                if (error.status == 404) {
-                }
-            },
-            complete: () => {
-                this.dataLoadCompleted.emit();
-                document.body.style.cursor = "default";
-            },
-        });
+        this.recentLoginsData = this.recentLoginsService.get();
+        this.filteredValues = this.recentLoginsData;
     }
     onFilter(event: { filteredValue: any }, dt: any) {
         this.filteredValues = event.filteredValue;
     }
     ngOnDestroy(): void {
-        if (this.welcomeEmailOb$ != null && this.welcomeEmailOb$ != undefined) {
-            this.welcomeEmailOb$.unsubscribe();
+        if (this.recentLoginsOb$ != null && this.recentLoginsOb$ != undefined) {
+            this.recentLoginsOb$.unsubscribe();
         }
     }
 
-    private formatValues() {
-        let self = this;
-
-        const formattedValues = [];
-
-        this.welcomeEmailsData.forEach(function (data) {
-            data["datetimestamp"] = self.datePipe.transform(
-                data["datetimestamp"],
-                "MMM d, y, h:mm:ss a"
-            );
-
-            formattedValues.push(data);
-        });
-
-        return formattedValues;
-    }
     onExportPdf() {
-        let title =
-            "Sent Welcome Emails - Run Date: " + new Date().toLocaleString();
+        let title = "Recent Logins - Run Date: " + new Date().toLocaleString();
 
         this.exportService.ExportToPdf(
             title,
-            "SentWelcomeEmails",
+            "RecentLogins",
             this.filteredValues,
             this.cols
         );
@@ -112,12 +77,11 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
         return false;
     }
     onExportExcel() {
-        let title =
-            "Sent Welcome Emails - Run Date: " + new Date().toLocaleString();
+        let title = "Recent Logins - Run Date: " + new Date().toLocaleString();
 
         this.exportService.ExportToExcel(
             title,
-            "SentWelcomeEmails",
+            "RecentLogins",
             this.filteredValues,
             this.cols
         );

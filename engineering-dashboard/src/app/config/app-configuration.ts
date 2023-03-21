@@ -7,4 +7,5 @@ export abstract class AppConfiguration {
   apiSentWelcomeEmail?: string;
   cardsMetaData?: any;
   GuamUsers?:any;
+  RecentLogins?: any;
 }

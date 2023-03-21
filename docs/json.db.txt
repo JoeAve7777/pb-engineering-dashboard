@@ -317,3 +317,8 @@ var RecentLogins = [
         "loginCount": 55
     }
 ]
+
+
+    selector: "app-recent-logins",
+    templateUrl: "./recent-logins.component.html",
+    styleUrls: ["./recent-logins.component.scss"],

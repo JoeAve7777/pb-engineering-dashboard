@@ -55,27 +55,6 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
         this.guamUsersData = this.guamUserService.get();
         this.guamUsersData = this.formatValues();
         this.filteredValues = this.guamUsersData;
-
-        // this.guamUsersOb$ = this.guamUserService.getAll().subscribe({
-        //     next: (data) => {
-        //         if (data !== undefined && data !== null) {
-        //             this.guamUsersData = data.sort((a, b) =>
-        //                 a.datetimestamp > b.datetimestamp ? -1 : 1
-        //             );
-
-        //             this.guamUsersData = this.formatValues();
-        //             this.filteredValues = this.guamUsersData;
-        //         }
-        //     },
-        //     error: (error: HttpErrorResponse) => {
-        //         if (error.status == 404) {
-        //         }
-        //     },
-        //     complete: () => {
-        //         this.dataLoadCompleted.emit();
-        //         document.body.style.cursor = "default";
-        //     },
-        // });
     }
     onFilter(event: { filteredValue: any }, dt: any) {
         this.filteredValues = event.filteredValue;
