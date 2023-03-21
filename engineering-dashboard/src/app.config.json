@@ -168,5 +168,73 @@
             "email": "ashly.wilson@amazon.com",
             "loginCount": 55
         }
+    ],
+    "RecentImpersonations": [
+        {
+            "id": 1,
+            "email": "joe.smith@aol.com",
+            "impersonationEmail": "ashly.wilson@amazon.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 2,
+            "email": "mary.wilson@yahoo.com",
+            "impersonationEmail": "dale.long@netflix.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 3,
+            "email": "johnny.avalon@yahoo.com",
+            "impersonationEmail": "luis.romero@itsoultions.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 4,
+            "email": "bobby.jean@bing.com",
+            "impersonationEmail": "paul.page@godaddy.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 5,
+            "email": "sue.dye@yahoo.com",
+            "impersonationEmail": "kevin.durant@aol.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 6,
+            "email": "sue.dye@yahoo.com",
+            "impersonationEmail": "joe.smith@aol.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 7,
+            "email": "kevin.durant@aol.com",
+            "impersonationEmail": "mary.wilson@yahoo.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 8,
+            "email": "paul.page@godaddy.com",
+            "impersonationEmail": "johnny.avalon@yahoo.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 9,
+            "email": "luis.romero@itsoultions.com",
+            "impersonationEmail": "bobby.jean@bing.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 10,
+            "email": "dale.long@netflix.com",
+            "impersonationEmail": "sue.dye@yahoo.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 11,
+            "email": "ashly.wilson@amazon.com",
+            "impersonationEmail": "sue.dye@yahoo.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        }
     ]
 }
