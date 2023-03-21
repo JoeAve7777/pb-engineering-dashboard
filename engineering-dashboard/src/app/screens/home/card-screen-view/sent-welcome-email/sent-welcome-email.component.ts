@@ -40,7 +40,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
         this.setupCols();
-        this.loadWelcomeEmailData();
+        this.loadData();
     }
 
     private setupCols() {
@@ -49,7 +49,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
             { dataKey: "email", title: "Email" },
         ];
     }
-    loadWelcomeEmailData() {
+    loadData() {
         document.body.style.cursor = "wait";
 
         this.welcomeEmailOb$ = this.sentWelcomeEmailService.getAll().subscribe({

@@ -43,7 +43,7 @@
             "label": "Migration Welcome Emails",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
-            "isAvailable": true,
+            "isAvailable": false,
             "isVisible": true
         },
         {
@@ -51,8 +51,65 @@
             "label": "Recent Device Usage",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
-            "isAvailable": true,
+            "isAvailable": false,
             "isVisible": true
         }
+    ],
+    "GuamUsers" : [
+        {
+            "id": 1,
+            "email": "joe.smith@aol.com",
+            "dateTimeStamp": "2023-10-21T13:28:06.419Z"
+        },
+        {
+            "id": 2,
+            "email": "mary.wilson@yahoo.com",
+            "dateTimeStamp":"2023-10-22T13:28:06.419Z"
+        },
+        {
+            "id": 3,
+            "email": "gina.palmer@gmail.com",
+            "dateTimeStamp":"2023-10-22T13:28:06.419Z"
+        },
+        {
+            "id": 4,
+            "email": "bobby.jean@bing.com",
+            "dateTimeStamp": "2023-10-24T13:28:06.419Z"
+        },
+        {
+            "id": 5,
+            "email": "sue.dye@yahoo.com",
+            "dateTimeStamp": "2023-10-25T13:28:06.419Z"
+        },
+        {
+            "id": 6,
+            "email": "enzo.balini@gmail.com",
+            "dateTimeStamp": "2023-10-25T13:28:06.419Z"
+        },
+        {
+            "id": 7,
+            "email": "kevin.durant@aol.com",
+            "dateTimeStamp": "2023-10-26T13:28:06.419Z"
+        },
+        {
+            "id": 8,
+            "email": "paul.page@godaddy.com",
+            "dateTimeStamp": "2023-10-27T13:28:06.419Z"
+        },
+        {
+            "id": 9,
+            "email": "luis.romero@itsoultions.com",
+            "dateTimeStamp": "2023-10-28T13:28:06.419Z"
+        },
+        {
+            "id": 10,
+            "email": "dale.long@netflix.com",
+            "dateTimeStamp": "2023-10-29T13:28:06.419Z"
+        },
+        {
+            "id": 11,
+            "email": "ashly.wilson@amazon.com",
+            "dateTimeStamp": "2023-10-23T13:28:06.419Z"
+        }
     ]
-}
+ }

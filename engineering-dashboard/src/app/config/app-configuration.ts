@@ -6,4 +6,5 @@ export abstract class AppConfiguration {
   apiAuthenticate?: string;
   apiSentWelcomeEmail?: string;
   cardsMetaData?: any;
+  GuamUsers?:any;
 }
