@@ -72,7 +72,7 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
 
         this.guamUsersData.forEach(function (data) {
             data["datetimestamp"] = self.datePipe.transform(
-                data["datetimestamp"],
+                data["dateTimeStamp"],
                 "MMM d, y, h:mm:ss a"
             );
 

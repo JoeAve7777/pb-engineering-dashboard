@@ -88,6 +88,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
         const formattedValues = [];
 
         this.welcomeEmailsData.forEach(function (data) {
+            
             data["datetimestamp"] = self.datePipe.transform(
                 data["datetimestamp"],
                 "MMM d, y, h:mm:ss a"
