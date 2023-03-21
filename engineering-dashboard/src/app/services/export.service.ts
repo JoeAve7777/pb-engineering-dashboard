@@ -10,12 +10,12 @@ import * as FileSaver from "file-saver";
 export class ExportService {
     constructor() {}
 
-    ExportToPdf(title: string, data: any[], cols: any[]) {
+    ExportToPdf(title: string, fileName: string, data: any[], cols: any[]) {
         const doc = new jsPDF("p", "pt");
 
         doc.text(title, 40, 30);
         doc["autoTable"](cols, data);
-        doc.save("SentWelcomeEmail.pdf");
+        doc.save(fileName + ".pdf");
     }
 
     ExportToExcel(title: string, fileName: string, data: any[], cols: any[]) {

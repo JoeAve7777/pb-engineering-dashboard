@@ -95,7 +95,7 @@ export class SentWelcomeEmailPageComponent implements OnInit {
         let title =
             "Sent Welcome Emails - Run Date: " + new Date().toLocaleString();
 
-        this.exportService.ExportToPdf(title, this.filteredValues, this.cols);
+        this.exportService.ExportToPdf(title, "SentWelcomeEmails", this.filteredValues, this.cols);
 
         return false;
     }

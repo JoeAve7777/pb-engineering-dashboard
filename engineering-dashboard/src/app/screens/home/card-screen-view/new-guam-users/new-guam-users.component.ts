@@ -53,7 +53,6 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
         document.body.style.cursor = "wait";
 
         this.guamUsersData = this.guamUserService.get();
-
         this.guamUsersData = this.formatValues();
         this.filteredValues = this.guamUsersData;
 
@@ -106,7 +105,12 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
     onExportPdf() {
         let title = "New Guam Users - Run Date: " + new Date().toLocaleString();
 
-        this.exportService.ExportToPdf(title, this.filteredValues, this.cols);
+        this.exportService.ExportToPdf(
+            title,
+            "NewGuamUsers",
+            this.filteredValues,
+            this.cols
+        );
 
         return false;
     }
