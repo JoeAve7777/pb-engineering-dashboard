@@ -46,7 +46,7 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
     private setupCols() {
         this.cols = [
             { dataKey: "dateTimeStamp", title: "Timestamp" },
-            { dataKey: "email", title: "Email" },
+            { dataKey: "email", title: "Admin User" },
         ];
     }
     loadData() {
