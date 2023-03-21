@@ -6,18 +6,29 @@
         <table>
             <tr>
                 <td>
-                    <a (click)="onExportPdf()"  title="Export to PDF" href="#"><i class="fa fa-file-pdf-o fa-lg mr-3"></i></a>
+                    <a (click)="onExportPdf()" title="Export to PDF" href="#"
+                        ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
+                    ></a>
                 </td>
                 <td>
-                    <a  (click)="onExportExcel()" title="Export to Excel" href="#"><i class="fa fa-file-excel-o fa-lg mr-3"></i></a>
+                    <a
+                        (click)="onExportExcel()"
+                        title="Export to Excel"
+                        href="#"
+                        ><i class="fa fa-file-excel-o fa-lg mr-3"></i
+                    ></a>
                 </td>
                 <td>
-                    <input title="Search Keyword"
+                    <input
+                        title="Search Keyword"
                         class="form-control search-filter"
                         pInputText
                         type="text"
                         (input)="
-                        dtNewGuamUsers.filterGlobal($event.target.value, 'contains')
+                            dtNewGuamUsers.filterGlobal(
+                                $event.target.value,
+                                'contains'
+                            )
                         "
                         placeholder="Search keyword"
                     />
@@ -71,7 +82,7 @@
                             <a
                                 href="mailto:{{
                                     guamUsersData.email
-                                }}?subject=Recent Login Subject
+                                }}?subject=New Guam User Subject
                             "
                                 >{{ guamUsersData.email }}</a
                             >

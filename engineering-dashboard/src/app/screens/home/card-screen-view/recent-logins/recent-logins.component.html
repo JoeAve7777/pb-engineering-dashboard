@@ -73,7 +73,13 @@
                 <ng-template pTemplate="body" let-recentLoginsData>
                     <tr style="height: 25px">
                         <td>
-                            {{ recentLoginsData.email }}
+                            <a
+                                href="mailto:{{
+                                    recentLoginsData.email
+                                }}?subject=Recent Logins Subject
+                        "
+                                >{{ recentLoginsData.email }}</a
+                            >
                         </td>
                         <td>
                             {{ recentLoginsData.loginCount }}
