@@ -28,8 +28,8 @@
     <div class="col-12">
         <div>
             <p-table
-                class="recent-impersonation"
-                id="recent-impersonation-id"
+                class="recent-impersonation-table"
+                id="recent-impersonation-table-id"
                 [ngClass]="[
                     'ui-table-bordered',
                     'ui-table-striped',
@@ -38,7 +38,7 @@
                 ]"
                 #dtRecentImpersonation
                 (onFilter)="onFilter($event, dtRecentImpersonation)"
-                [value]="welcomeEmailsData"
+                [value]="recentImpersonationData"
                 [paginator]="true"
                 dataKey="id"
                 [rows]="10"
@@ -50,30 +50,30 @@
             >
                 <ng-template pTemplate="header">
                     <tr class="table-row-style">
-                        <th pSortableColumn="datetimestamp" style="width: 20%">
+                        <th pSortableColumn="dateTimeStamp" style="width: 20%">
                             TIMESTAMP
-                            <p-sortIcon field="datetimestamp"></p-sortIcon>
+                            <p-sortIcon field="dateTimeStamp"></p-sortIcon>
                         </th>
                         <th pSortableColumn="email" style="width: 20%">
                             EMAIL <p-sortIcon field="email"></p-sortIcon>
                         </th>
                     </tr>
                 </ng-template>
-                <ng-template pTemplate="body" let-welcomeEmailsData>
+                <ng-template pTemplate="body" let-recentImpersonationData>
                     <tr style="height: 25px">
                         <td>
                             {{
-                                welcomeEmailsData.datetimestamp
+                                recentImpersonationData.datetimestamp
                                     | date : "MMM d, y, h:mm:ss a"
                             }}
                         </td>
                         <td>
                             <a
                                 href="mailto:{{
-                                    welcomeEmailsData.email
+                                    recentImpersonationData.email
                                 }}?subject=Recent Login Subject
                             "
-                                >{{ welcomeEmailsData.email }}</a
+                                >{{ recentImpersonationData.email }}</a
                             >
                         </td>
                     </tr>
@@ -82,4 +82,6 @@
         </div>
     </div>
 </div>
-<!-- joea7777 -->
+<!-- joea7888  -->
+
+asdf

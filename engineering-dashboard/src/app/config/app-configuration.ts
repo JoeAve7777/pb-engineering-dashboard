@@ -8,4 +8,5 @@ export abstract class AppConfiguration {
   cardsMetaData?: any;
   GuamUsers?:any;
   RecentLogins?: any;
+  RecentImpersonations?: any;
 }
