@@ -46,7 +46,7 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
     private setupCols() {
         this.cols = [
             { dataKey: "email", title: "Email" },
-            { dataKey: "loginCount", title: "LoginCount" },
+            { dataKey: "loginCount", title: "Login Count" },
         ];
     }
     loadData() {
