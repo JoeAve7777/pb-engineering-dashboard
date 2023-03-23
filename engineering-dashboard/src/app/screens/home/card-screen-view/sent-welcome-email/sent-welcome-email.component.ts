@@ -91,7 +91,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
             
             data["datetimestamp"] = self.datePipe.transform(
                 data["datetimestamp"],
-                "MMM d, y, h:mm:ss a"
+                "MMM d, yy, h:mm a"
             );
 
             formattedValues.push(data);

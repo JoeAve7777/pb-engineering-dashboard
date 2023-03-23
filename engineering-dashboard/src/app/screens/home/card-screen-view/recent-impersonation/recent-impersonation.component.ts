@@ -73,7 +73,7 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
         this.recentImpersonationData.forEach(function (data) {
             data["datetimestamp"] = self.datePipe.transform(
                 data["dateTimeStamp"],
-                "MMM d, y, h:mm:ss a"
+                "MMM d, yy, h:mm a"
             );
 
             formattedValues.push(data);
