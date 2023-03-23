@@ -65,11 +65,11 @@
             >
                 <ng-template pTemplate="header">
                     <tr class="table-row-style">
-                        <th pSortableColumn="dateTimeStamp">
+                        <th pSortableColumn="dateTimeStamp" style="text-align: left;">
                             TIMESTAMP
                             <p-sortIcon field="dateTimeStamp"></p-sortIcon>
                         </th>
-                        <th pSortableColumn="email">
+                        <th pSortableColumn="email" style="text-align: left;">
                             ADMIN USER <p-sortIcon field="email"></p-sortIcon>
                         </th>
                         <th pSortableColumn="impersonationEmail">
@@ -80,13 +80,13 @@
                 </ng-template>
                 <ng-template pTemplate="body" let-recentImpersonationData>
                     <tr style="height: 25px">
-                        <td nowrap>
+                        <td nowrap style="text-align: left;">
                             {{
                                 recentImpersonationData.datetimestamp
                                     | date : "MMM d, yy, h:mm a"
                             }}
                         </td>
-                        <td>
+                        <td style="text-align: left;">
                             <a
                                 href="mailto:{{
                                     recentImpersonationData.email
@@ -95,7 +95,7 @@
                                 >{{ recentImpersonationData.email }}</a
                             >
                         </td>
-                        <td>
+                        <td style="text-align: left;">
                             <a
                                 href="mailto:{{
                                     recentImpersonationData.impersonationEmail
