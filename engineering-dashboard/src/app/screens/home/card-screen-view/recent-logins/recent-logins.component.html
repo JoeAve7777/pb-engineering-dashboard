@@ -2,39 +2,47 @@
     <div class="col-5">
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
-    <div class="col-7">
-        <table>
-            <tr>
-                <td>
-                    <a (click)="onExportPdf()" title="Export to PDF" href="#"
-                        ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
-                    ></a>
-                </td>
-                <td>
-                    <a
-                        (click)="onExportExcel()"
-                        title="Export to Excel"
-                        href="#"
-                        ><i class="fa fa-file-excel-o fa-lg mr-3"></i
-                    ></a>
-                </td>
-                <td>
-                    <input
-                        title="Search Keyword"
-                        class="form-control search-filter"
-                        pInputText
-                        type="text"
-                        (input)="
+    <div class="col-7 text-right">
+        <span class="search-span">
+            <table>
+                <tr>
+                    <td>
+                        <a
+                            *ngIf="dashboardCardItem.isExportable"
+                            (click)="onExportPdf()"
+                            title="Export to PDF"
+                            href="#"
+                            ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
+                        ></a>
+                    </td>
+                    <td>
+                        <a
+                            *ngIf="dashboardCardItem.isExportable"
+                            (click)="onExportExcel()"
+                            title="Export to Excel"
+                            href="#"
+                            ><i class="fa fa-file-excel-o fa-lg mr-3"></i
+                        ></a>
+                    </td>
+                    <td>
+                        <input
+                            *ngIf="dashboardCardItem.isSearchable"
+                            title="Search Keyword"
+                            class="form-control search-filter"
+                            pInputText
+                            type="text"
+                            (input)="
                             dtRecentLogins.filterGlobal(
-                                $event.target.value,
-                                'contains'
-                            )
-                        "
-                        placeholder="Search keyword"
-                    />
-                </td>
-            </tr>
-        </table>
+                                    $event.target.value,
+                                    'contains'
+                                )
+                            "
+                            placeholder="Search keyword"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </span>
     </div>
     <div class="col-12">
         <div>

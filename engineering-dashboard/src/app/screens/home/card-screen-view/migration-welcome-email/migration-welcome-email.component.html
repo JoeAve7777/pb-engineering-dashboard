@@ -2,29 +2,46 @@
     <div class="col-5">
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
-    <div class="col-7">
+    <span class="search-span">
         <table>
             <tr>
                 <td>
-                    <a (click)="onExportPdf()"  title="Export to PDF" href="#"><i class="fa fa-file-pdf-o fa-lg mr-3"></i></a>
+                    <a
+                        *ngIf="dashboardCardItem.isExportable"
+                        (click)="onExportPdf()"
+                        title="Export to PDF"
+                        href="#"
+                        ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
+                    ></a>
                 </td>
                 <td>
-                    <a  (click)="onExportExcel()" title="Export to Excel" href="#"><i class="fa fa-file-excel-o fa-lg mr-3"></i></a>
+                    <a
+                        *ngIf="dashboardCardItem.isExportable"
+                        (click)="onExportExcel()"
+                        title="Export to Excel"
+                        href="#"
+                        ><i class="fa fa-file-excel-o fa-lg mr-3"></i
+                    ></a>
                 </td>
                 <td>
-                    <input title="Search Keyword"
+                    <input
+                        *ngIf="dashboardCardItem.isSearchable"
+                        title="Search Keyword"
                         class="form-control search-filter"
                         pInputText
                         type="text"
                         (input)="
-                        dtMigrationWelcomeEmails.filterGlobal($event.target.value, 'contains')
+                        dtMigrationWelcomeEmails.filterGlobal(
+                                $event.target.value,
+                                'contains'
+                            )
                         "
                         placeholder="Search keyword"
                     />
                 </td>
             </tr>
         </table>
-    </div>
+    </span>
     <div class="col-12">
         <div>
             <p-table

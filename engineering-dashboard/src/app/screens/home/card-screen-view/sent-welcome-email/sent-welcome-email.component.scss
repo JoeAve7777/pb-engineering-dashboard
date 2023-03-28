@@ -7,9 +7,6 @@
         max-height: 290px;
     }
 }
-.search-span {
-    display: inline-block;
-}
 
 .table-row-style {
     height: 25px;
@@ -20,42 +17,6 @@
     font-weight: bold;
 }
 
-.search-image {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 5px;
+.search-span {
+    display: inline-block;
 }
-.search-filter {
-    height: 25px;
-}
-
-// :host ::ng-deep {
-//     .hide-next .p-paginator-next {
-//         visibility: hidden;
-//     }
-// }
-
-// :host ::ng-deep {
-//   .hide-next .p-paginator-last {
-//       visibility: hidden;
-//   }
-// }
-// :host ::ng-deep {
-//   .hide-next .p-paginator-first {
-//       visibility: hidden;
-//   }
-// }
-
-// :host ::ng-deep {
-//   .hide-next .p-paginator-prev {
-//       visibility: hidden;
-//   }
-// }
-
-// :host ::ng-deep {
-//   .hide-next .p-paginator-page {
-//       visibility: hidden;
-//   }
-// }
