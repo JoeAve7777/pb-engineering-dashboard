@@ -12,7 +12,9 @@
             "iconClass": "fa-share",
             "isExpandable": false,
             "isAvailable": true,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         },
         {
             "id": "2",
@@ -20,7 +22,9 @@
             "iconClass": "fa-sharp fa-solid fa-user",
             "isExpandable": false,
             "isAvailable": true,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         },
         {
             "id": "3",
@@ -28,7 +32,9 @@
             "iconClass": "fa-regular fa-user-secret",
             "isExpandable": false,
             "isAvailable": true,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         },
         {
             "id": "4",
@@ -36,7 +42,9 @@
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
             "isAvailable": true,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         },
         {
             "id": "5",
@@ -44,7 +52,9 @@
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
             "isAvailable": false,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         },
         {
             "id": "6",
@@ -52,7 +62,9 @@
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
             "isAvailable": false,
-            "isVisible": true
+            "isVisible": true,
+            "isSearchable":true,
+            "isExportable":true
         }
     ],
     "GuamUsers": [

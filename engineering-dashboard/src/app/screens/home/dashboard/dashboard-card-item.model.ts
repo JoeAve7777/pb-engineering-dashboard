@@ -5,4 +5,6 @@ export interface DashboardCardItem {
     isExpandable: boolean;
     isAvailable: boolean;
     isVisible: boolean;
+    isSearchable:boolean;
+    isExportable:boolean;
 }
