@@ -2,100 +2,11 @@
     <div class="col-5">
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
-    <span class="search-span">
-        <table>
-            <tr>
-                <td>
-                    <a
-                        *ngIf="dashboardCardItem.isExportable"
-                        (click)="onExportPdf()"
-                        title="Export to PDF"
-                        href="#"
-                        ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
-                    ></a>
-                </td>
-                <td>
-                    <a
-                        *ngIf="dashboardCardItem.isExportable"
-                        (click)="onExportExcel()"
-                        title="Export to Excel"
-                        href="#"
-                        ><i class="fa fa-file-excel-o fa-lg mr-3"></i
-                    ></a>
-                </td>
-                <td>
-                    <input
-                        *ngIf="dashboardCardItem.isSearchable"
-                        title="Search Keyword"
-                        class="form-control search-filter"
-                        pInputText
-                        type="text"
-                        (input)="
-                        dtMigrationWelcomeEmails.filterGlobal(
-                                $event.target.value,
-                                'contains'
-                            )
-                        "
-                        placeholder="Search keyword"
-                    />
-                </td>
-            </tr>
-        </table>
-    </span>
-    <div class="col-12">
+
+    <div class="col-12 text-center">
         <div>
-            <p-table
-                class="migration-welcome-table"
-                id="migration_welcome-table-id"
-                [ngClass]="[
-                    'ui-table-bordered',
-                    'ui-table-striped',
-                    'ui-table-hover',
-                    'ui-table-open'
-                ]"
-                #dtMigrationWelcomeEmails
-                (onFilter)="onFilter($event, dtMigrationWelcomeEmails)"
-                [value]="welcomeEmailsData"
-                [paginator]="true"
-                dataKey="id"
-                [rows]="10"
-                [showCurrentPageReport]="true"
-                [scrollable]="true"
-                [rowsPerPageOptions]="[5, 10, 25, 50]"
-                currentPageReportTemplate="Rows {first} to {last} of {totalRecords}"
-                [globalFilterFields]="['datetimestamp', 'email']"
-            >
-                <ng-template pTemplate="header">
-                    <tr class="table-row-style">
-                        <th pSortableColumn="datetimestamp">
-                            TIMESTAMP
-                            <p-sortIcon field="datetimestamp"></p-sortIcon>
-                        </th>
-                        <th pSortableColumn="email">
-                            EMAIL <p-sortIcon field="email"></p-sortIcon>
-                        </th>
-                    </tr>
-                </ng-template>
-                <ng-template pTemplate="body" let-welcomeEmailsData>
-                    <tr style="height: 25px">
-                        <td>
-                            {{
-                                welcomeEmailsData.datetimestamp
-                                    | date : "MMM d, y, h:mm:ss a"
-                            }}
-                        </td>
-                        <td>
-                            <a
-                                href="mailto:{{
-                                    welcomeEmailsData.email
-                                }}?subject=Recent Login Subject
-                            "
-                                >{{ welcomeEmailsData.email }}</a
-                            >
-                        </td>
-                    </tr>
-                </ng-template>
-            </p-table>
+            <h1>1086</h1>
+            <h3>Total Users</h3>
         </div>
     </div>
 </div>

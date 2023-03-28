@@ -48,13 +48,13 @@
         },
         {
             "id": "5",
-            "label": "Migration Welcome Emails",
-            "iconClass": "fa-duotone fa-users",
+            "label": "Migration Welcome Emails Count",
+            "iconClass": "fa-duotone fa-cubes",
             "isExpandable": false,
-            "isAvailable": false,
+            "isAvailable": true,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable":false,
+            "isExportable":false
         },
         {
             "id": "6",

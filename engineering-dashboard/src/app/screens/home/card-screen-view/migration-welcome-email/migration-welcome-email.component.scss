@@ -1,22 +1,5 @@
-#migration_welcome-table-id {
-    font-size: 10px;
-}
-
-.migration-welcome-table {
-    ::ng-deep .p-datatable table {
-        max-height: 290px;
-    }
-}
-
-.table-row-style {
-    height: 25px;
-}
-
 .card-screen-caption {
     margin-top: 6px;
     font-weight: bold;
 }
 
-.search-span {
-    display: inline-block;
-}

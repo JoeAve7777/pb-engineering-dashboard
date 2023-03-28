@@ -11,7 +11,7 @@
                 padding: 10px;
                 margin-top: 2px;
                 cursor: pointer;
-                min-width: 35px;
+                min-width: 30px;
             "
             (click)="onClick()"
             #dtn
@@ -20,10 +20,7 @@
                 class="fa {{ dashboardCardItem.iconClass }} fa-sm mr-2"
                 aria-hidden="true"
             ></i>
-            <div
-                class="d-none d-sm-block"
-                style="margin-top: 3px; font-size: 0.9rem"
-            >
+            <div class="d-none d-sm-block thumbnail-label">
                 {{ dashboardCardItem.label }}
             </div>
         </div>
