@@ -52,7 +52,10 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
     loadData() {
         document.body.style.cursor = "wait";
 
-        this.recentImpersonationData = this.recentImpersonationService.get();
+        this.recentImpersonationData = this.recentImpersonationService
+            .get()
+            .sort((a, b) => (a.dateTimeStamp > b.dateTimeStamp ? -1 : 1));
+
         this.recentImpersonationData = this.formatValues();
         this.filteredValues = this.recentImpersonationData;
     }
@@ -82,7 +85,8 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
         return formattedValues;
     }
     onExportPdf() {
-        let title = "Recent Impersonation - Run Date: " + new Date().toLocaleString();
+        let title =
+            "Recent Impersonation - Run Date: " + new Date().toLocaleString();
 
         this.exportService.ExportToPdf(
             title,
@@ -94,7 +98,8 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
         return false;
     }
     onExportExcel() {
-        let title = "Recent Impersonation - Run Date: " + new Date().toLocaleString();
+        let title =
+            "Recent Impersonation - Run Date: " + new Date().toLocaleString();
 
         this.exportService.ExportToExcel(
             title,

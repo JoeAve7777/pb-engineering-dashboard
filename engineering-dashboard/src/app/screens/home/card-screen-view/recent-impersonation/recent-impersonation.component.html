@@ -32,7 +32,7 @@
                             pInputText
                             type="text"
                             (input)="
-                            dtRecentImpersonation.filterGlobal(
+                                dtRecentImpersonation.filterGlobal(
                                     $event.target.value,
                                     'contains'
                                 )
@@ -74,24 +74,33 @@
                 <ng-template pTemplate="header">
                     <tr class="table-row-style">
                         <th
+                            nowrap
                             pSortableColumn="dateTimeStamp"
-                            style="text-align: left"
+                            style="text-align: left; width: 30px"
                         >
-                            TIMESTAMP
+                            Timestamp
                             <p-sortIcon field="dateTimeStamp"></p-sortIcon>
                         </th>
-                        <th pSortableColumn="email" style="text-align: left">
-                            ADMIN USER <p-sortIcon field="email"></p-sortIcon>
+                        <th
+                            nowrap
+                            pSortableColumn="email"
+                            style="text-align: left; width: 100px"
+                        >
+                            Admin User <p-sortIcon field="email"></p-sortIcon>
                         </th>
-                        <th pSortableColumn="impersonationEmail">
-                            IMPERSONATED
+                        <th
+                            nowrap
+                            pSortableColumn="impersonationEmail"
+                            style="text-align: left; width: 100px"
+                        >
+                            Impersonation
                             <p-sortIcon field="impersonationEmail"></p-sortIcon>
                         </th>
                     </tr>
                 </ng-template>
                 <ng-template pTemplate="body" let-recentImpersonationData>
                     <tr style="height: 25px">
-                        <td nowrap style="text-align: left; width: 20px">
+                        <td nowrap style="text-align: left; width: 30px">
                             {{
                                 recentImpersonationData.datetimestamp
                                     | date : "MMM d, yy, h:mm a"

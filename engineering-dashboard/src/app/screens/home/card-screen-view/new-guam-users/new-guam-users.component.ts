@@ -52,7 +52,10 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
     loadData() {
         document.body.style.cursor = "wait";
 
-        this.guamUsersData = this.guamUserService.get();
+        this.guamUsersData = this.guamUserService
+            .get()
+            .sort((a, b) => (a.dateTimeStamp > b.dateTimeStamp ? -1 : 1));
+
         this.guamUsersData = this.formatValues();
         this.filteredValues = this.guamUsersData;
     }

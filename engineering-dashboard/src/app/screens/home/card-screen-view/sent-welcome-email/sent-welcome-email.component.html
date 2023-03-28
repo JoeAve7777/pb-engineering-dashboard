@@ -3,7 +3,7 @@
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
     <div class="col-7 text-right">
-        <span style="display: inline-block;">
+        <span style="display: inline-block">
             <table>
                 <tr>
                     <td>
@@ -76,17 +76,20 @@
                         <th pSortableColumn="email">
                             EMAIL <p-sortIcon field="email"></p-sortIcon>
                         </th>
+                        <th pSortableColumn="template">
+                            TEMPLATE <p-sortIcon field="template"></p-sortIcon>
+                        </th>
                     </tr>
                 </ng-template>
                 <ng-template pTemplate="body" let-welcomeEmailsData>
                     <tr style="height: 25px">
-                        <td nowrap style="text-align: left;">
+                        <td nowrap style="text-align: left; width: 100px">
                             {{
                                 welcomeEmailsData.datetimestamp
                                     | date : "MMM d, yy, h:mm a"
                             }}
                         </td>
-                        <td>
+                        <td nowrap style="text-align: left; width: 100px">
                             <a
                                 href="mailto:{{
                                     welcomeEmailsData.email
@@ -94,6 +97,9 @@
                             "
                                 >{{ welcomeEmailsData.email }}</a
                             >
+                        </td>
+                        <td nowrap>
+                           New
                         </td>
                     </tr>
                 </ng-template>

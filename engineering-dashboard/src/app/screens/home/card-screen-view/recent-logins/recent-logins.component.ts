@@ -52,7 +52,11 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
     loadData() {
         document.body.style.cursor = "wait";
 
-        this.recentLoginsData = this.recentLoginsService.get();
+        //Sort by desc lo
+        this.recentLoginsData = this.recentLoginsService
+            .get()
+            .sort((a, b) => (a.loginCount > b.loginCount ? -1 : 1));
+
         this.filteredValues = this.recentLoginsData;
     }
     onFilter(event: { filteredValue: any }, dt: any) {

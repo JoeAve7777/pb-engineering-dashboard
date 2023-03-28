@@ -3,4 +3,5 @@ export class SendWelcomeEmail implements WelcomeEmail {
     id!:Number;
     email!: string;
     dateTimeStamp!: Date;
+    template!: string;
 }
