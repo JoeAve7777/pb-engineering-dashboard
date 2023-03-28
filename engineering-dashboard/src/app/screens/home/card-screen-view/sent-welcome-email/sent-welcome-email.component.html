@@ -3,7 +3,7 @@
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
     <div class="col-7 text-right">
-        <span class="search-span">
+        <span style="display: inline-block;">
             <table>
                 <tr>
                     <td>
@@ -80,7 +80,7 @@
                 </ng-template>
                 <ng-template pTemplate="body" let-welcomeEmailsData>
                     <tr style="height: 25px">
-                        <td nowrap>
+                        <td nowrap style="text-align: left;">
                             {{
                                 welcomeEmailsData.datetimestamp
                                     | date : "MMM d, yy, h:mm a"
