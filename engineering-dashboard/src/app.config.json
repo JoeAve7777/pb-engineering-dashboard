@@ -8,13 +8,13 @@
     "cardsMetaData": [
         {
             "id": "1",
-            "label": "Sent Welcome Emails",
+            "label": "Migration Welcome Emails",
             "iconClass": "fa-share",
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable": true,
+            "isExportable": true
         },
         {
             "id": "2",
@@ -23,8 +23,8 @@
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable": true,
+            "isExportable": true
         },
         {
             "id": "3",
@@ -33,18 +33,18 @@
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable": true,
+            "isExportable": true
         },
         {
             "id": "4",
-            "label": "New Guam Users",
+            "label": "All New Guam Users - Migration and AddNew",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable": true,
+            "isExportable": true
         },
         {
             "id": "5",
@@ -53,8 +53,8 @@
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
-            "isSearchable":false,
-            "isExportable":false
+            "isSearchable": false,
+            "isExportable": false
         },
         {
             "id": "6",
@@ -63,8 +63,8 @@
             "isExpandable": false,
             "isAvailable": false,
             "isVisible": true,
-            "isSearchable":true,
-            "isExportable":true
+            "isSearchable": true,
+            "isExportable": true
         }
     ],
     "GuamUsers": [
