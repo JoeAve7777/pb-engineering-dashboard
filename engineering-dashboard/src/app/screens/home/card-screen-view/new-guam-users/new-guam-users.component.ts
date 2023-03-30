@@ -58,6 +58,8 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
 
         this.guamUsersData = this.formatValues();
         this.filteredValues = this.guamUsersData;
+        
+        this.dataLoadCompleted.emit();
     }
     onFilter(event: { filteredValue: any }, dt: any) {
         this.filteredValues = event.filteredValue;

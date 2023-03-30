@@ -58,6 +58,8 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
 
         this.recentImpersonationData = this.formatValues();
         this.filteredValues = this.recentImpersonationData;
+
+        this.dataLoadCompleted.emit();
     }
     onFilter(event: { filteredValue: any }, dt: any) {
         this.filteredValues = event.filteredValue;

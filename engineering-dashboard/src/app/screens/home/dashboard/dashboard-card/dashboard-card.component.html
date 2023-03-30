@@ -65,6 +65,13 @@
         </div>
         
         <div *ngSwitchCase="'6'">
+            <app-total-users
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-users>
+        </div>
+
+        <div *ngSwitchCase="'7'">
             <app-recent-device-usage
                 (dataLoadCompleted)="callMeBack()"
                 [dashboardCardItem]="dashboardCardItem"

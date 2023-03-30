@@ -58,6 +58,8 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
             .sort((a, b) => (a.loginCount > b.loginCount ? -1 : 1));
 
         this.filteredValues = this.recentLoginsData;
+
+        this.dataLoadCompleted.emit();
     }
     onFilter(event: { filteredValue: any }, dt: any) {
         this.filteredValues = event.filteredValue;

@@ -1,6 +1,6 @@
 {
     "title": "PB Engineering Dashboard",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "copyRight": "©1996-2022 Pitney Bowes Inc. All rights reserved.",
     "apiBaseUrl": "http://localhost:4000/",
     "apiAuthenticate": "https://g5td3nfq5m.execute-api.us-east-1.amazonaws.com/dev/fetchuserdetails?email=@email&password=@password",
@@ -38,7 +38,7 @@
         },
         {
             "id": "4",
-            "label": "All New Guam Users - Migration and AddNew",
+            "label": "All New Guam Users - Migration / AddNew",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
             "isAvailable": true,
@@ -58,6 +58,16 @@
         },
         {
             "id": "6",
+            "label": "Total Users",
+            "iconClass": "fa-duotone fa-user-plus",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false
+        },
+        {
+            "id": "7",
             "label": "Recent Device Usage",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,

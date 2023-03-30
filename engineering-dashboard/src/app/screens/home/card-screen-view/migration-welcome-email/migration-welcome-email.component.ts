@@ -27,6 +27,7 @@ export class MigrationWelcomeEmailComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
         this.loadData();
+        this.dataLoadCompleted.emit();
     }
 
     loadData() {}

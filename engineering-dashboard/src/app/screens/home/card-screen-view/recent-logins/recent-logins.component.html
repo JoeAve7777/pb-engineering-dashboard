@@ -60,10 +60,10 @@
                 [value]="recentLoginsData"
                 [paginator]="true"
                 dataKey="id"
-                [rows]="10"
+                [rows]="50"
+                [rowsPerPageOptions]="[10, 25, 50, 100]"
                 [showCurrentPageReport]="true"
                 [scrollable]="true"
-                [rowsPerPageOptions]="[5, 10, 25, 50]"
                 currentPageReportTemplate="Rows {first} to {last} of {totalRecords}"
                 [globalFilterFields]="['loginCount', 'email']"
             >
