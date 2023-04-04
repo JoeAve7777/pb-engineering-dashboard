@@ -7,17 +7,6 @@
     "apiSentWelcomeEmail": "https://63fe4c94370fe830d9d21389.mockapi.io/api/v1/welcomeemails",
     "cardsMetaData": [
         {
-            "id": "1",
-            "label": "Migration Welcome Emails",
-            "iconClass": "fa-share",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": true,
-            "isExportable": true,
-            "isPrintable": false
-        },
-        {
             "id": "2",
             "label": "Recent Login",
             "iconClass": "fa-sharp fa-solid fa-user",
@@ -40,6 +29,39 @@
             "isPrintable": false
         },
         {
+            "id": "7",
+            "label": "Recent Device Usage",
+            "iconClass": "fa-duotone fa-users",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": true,
+            "isExportable": true,
+            "isPrintable": false
+        },
+        {
+            "id": "1",
+            "label": "Migration Welcome Emails",
+            "iconClass": "fa-share",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": true,
+            "isExportable": true,
+            "isPrintable": false
+        },
+        {
+            "id": "6",
+            "label": "Total Users",
+            "iconClass": "fa-duotone fa-user-plus",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true
+        },
+        {
             "id": "4",
             "label": "All New Guam Users - Migration / AddNew",
             "iconClass": "fa-duotone fa-users",
@@ -60,28 +82,6 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": true
-        },
-        {
-            "id": "6",
-            "label": "Total Users",
-            "iconClass": "fa-duotone fa-user-plus",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": false,
-            "isExportable": false,
-            "isPrintable": true
-        },
-        {
-            "id": "7",
-            "label": "Recent Device Usage",
-            "iconClass": "fa-duotone fa-users",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": true,
-            "isExportable": true,
-            "isPrintable": false
         }
     ],
     "GuamUsers": [
