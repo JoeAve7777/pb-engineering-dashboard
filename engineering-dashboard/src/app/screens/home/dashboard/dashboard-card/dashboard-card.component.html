@@ -1,7 +1,6 @@
 <p-card
     class="card p-2 mb-1 shadow rounded"
-    id="print-div"
-    [ngClass]="dashboardCardItem.isActive ? '' : 'd-print-none'"
+    id="card-id-{{ dashboardCardItem.id }}"
 >
     <div class="p-card-body">
         <div class="p-card-title">
@@ -15,7 +14,7 @@
                 class="fa {{ dashboardCardItem.iconClass }} fa-2x mr-3"
                 aria-hidden="true"
             ></i
-            ><b>{{ dashboardCardItem.label }}{{ dashboardCardItem.isActive }}</b>
+            ><b>{{ dashboardCardItem.label }}</b>
             <span style="float: right; cursor: pointer; font-weight: bold">
                 <i
                     title="Expand"

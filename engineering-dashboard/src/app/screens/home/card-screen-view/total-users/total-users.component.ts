@@ -44,8 +44,6 @@ export class TotalUsersComponent implements OnInit, OnDestroy {
 
     onPrint()
     {
-         this.dashboardCardItem.isActive=true;
-       
          window.print();
     
          return false; 
