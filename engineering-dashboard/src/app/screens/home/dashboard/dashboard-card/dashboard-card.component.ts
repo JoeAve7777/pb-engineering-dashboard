@@ -9,7 +9,7 @@ import { DashboardCardItem } from "../dashboard-card-item.model";
 export class DashboardCardComponent implements OnInit {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dashboardCardExpanded = new EventEmitter<DashboardCardItem>();
-  
+
     showSpinner = false;
 
     get isExpandable(): boolean {
@@ -28,10 +28,6 @@ export class DashboardCardComponent implements OnInit {
 
     onExpandClick() {
         this.dashboardCardExpanded.emit(this.dashboardCardItem);
-
-        // this.dashboardCardItemService.broadcastDashboardCardExpandRequestedEvent(
-        //     this.dashboardCardItem
-        // );
     }
 
     callMeBack() {

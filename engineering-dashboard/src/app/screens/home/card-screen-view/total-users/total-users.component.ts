@@ -42,10 +42,16 @@ export class TotalUsersComponent implements OnInit, OnDestroy {
         }
     }
 
-    onPrint()
-    {
-         window.print();
-    
-         return false; 
+    onPrint() {
+        
+        let cardHtlm = document.getElementById(
+            "card-id-" + this.dashboardCardItem.id
+        ).innerHTML;
+        
+        document.getElementById("print-div").innerHTML = cardHtlm;
+
+        window.print();
+
+        return false;
     }
 }

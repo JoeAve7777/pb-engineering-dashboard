@@ -1,3 +1,6 @@
+<!-- Do not remove this div since it is used for printing -->
+<div id="print-div" style="visibility: hidden; height: 0px"></div>
+
 <div class="row" style="margin-top: 4.3rem; width: 100%; height: auto">
     <div
         class="col-12 tool-bar"
@@ -24,8 +27,6 @@
         >
             <div class="row">
                 <div class="col-12">
-                   <div id="print-div" style="visibility: hidden;">Hello Joe</div>
-
                     <app-dashboard-card-list
                         [dashboardCardItems]="dashboardCardItems"
                         (dashboardCardExpanded)="

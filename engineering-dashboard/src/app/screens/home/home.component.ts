@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         this.dashboardCardItems = this.appConfiguration.cardsMetaData;
+        this.setupPrintingListener();
     }
 
     showSideBar = false;
@@ -51,57 +52,9 @@ export class HomeComponent implements OnInit {
         alert(dashboardCardItem.label);
     }
 
-
-    // dashboardCardItems: Array<DashboardCardItem> = [
-    //     {
-    //         id: "1",
-    //         label: "Sent Welcome Emails",
-    //         iconClass: "fa-share",
-    //         isExpandable: true,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    //     {
-    //         id: "2",
-    //         label: "Successful Logins",
-    //         iconClass: "fa-duotone fa-users",
-    //         isExpandable: false,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    //     {
-    //         id: "3",
-    //         label: "Recent Login",
-    //         iconClass: "fa-sharp fa-solid fa-user",
-    //         isExpandable: false,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    //     {
-    //         id: "4",
-    //         label: "Recent Impersonation",
-    //         iconClass: "fa-regular fa-user-secret",
-    //         isExpandable: false,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    //     {
-    //         id: "5",
-    //         label: "Bulk Mail Stats",
-    //         iconClass: "fa-envelope",
-    //         isExpandable: false,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    //     {
-    //         id: "6",
-    //         label: "Carrier Performance",
-    //         iconClass: "fa-truck",
-    //         isExpandable: false,
-    //         isAvailable: true,
-    //         isVisible: true,
-    //     },
-    // ];
-
-
+    setupPrintingListener() {
+        window.addEventListener("afterprint", (event) => {
+            document.getElementById("print-div").innerHTML = "";
+        });
+    }
 }

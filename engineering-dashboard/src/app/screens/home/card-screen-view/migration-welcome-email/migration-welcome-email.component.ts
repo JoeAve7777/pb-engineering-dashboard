@@ -28,16 +28,6 @@ export class MigrationWelcomeEmailComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         this.loadData();
         this.dataLoadCompleted.emit();
-
-        window.addEventListener("afterprint", (event) => {
-            document.getElementById("print-div").innerHTML = "";
-        });
-
-        window.addEventListener("beforeprint", (event) => {
-            let cardHtlm = document.getElementById("card-id-1").innerHTML;
-
-            document.getElementById("print-div").innerHTML = cardHtlm;
-        });
     }
 
     loadData() {}
@@ -52,6 +42,13 @@ export class MigrationWelcomeEmailComponent implements OnInit, OnDestroy {
     }
 
     onPrint() {
+        
+        let cardHtlm = document.getElementById(
+            "card-id-" + this.dashboardCardItem.id
+        ).innerHTML;
+        
+        document.getElementById("print-div").innerHTML = cardHtlm;
+
         window.print();
 
         return false;
