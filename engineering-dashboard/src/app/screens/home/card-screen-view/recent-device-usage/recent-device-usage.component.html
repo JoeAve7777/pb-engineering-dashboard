@@ -12,7 +12,9 @@
                             (click)="onExportPdf()"
                             title="Export to PDF"
                             href="#"
-                            ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
+                            ><i
+                                class="fa fa-file-pdf-o fa-lg mr-3 d-print-none"
+                            ></i
                         ></a>
                     </td>
                     <td>
@@ -21,18 +23,29 @@
                             (click)="onExportExcel()"
                             title="Export to Excel"
                             href="#"
-                            ><i class="fa fa-file-excel-o fa-lg mr-3"></i
+                            ><i
+                                class="fa fa-file-excel-o fa-lg mr-3 d-print-none"
+                            ></i
+                        ></a>
+                    </td>
+                    <td>
+                        <a
+                            *ngIf="dashboardCardItem.isPrintable"
+                            onclick="window.print();return false;"
+                            title="Print"
+                            href="#"
+                            ><i class="fa fa-print fa-lg mr-3 d-print-none"></i
                         ></a>
                     </td>
                     <td>
                         <input
                             *ngIf="dashboardCardItem.isSearchable"
                             title="Search Keyword"
-                            class="form-control search-filter"
+                            class="form-control search-filter d-print-none"
                             pInputText
                             type="text"
                             (input)="
-                            dtRecentDeviceUsage.filterGlobal(
+                                dtRecentDeviceUsage.filterGlobal(
                                     $event.target.value,
                                     'contains'
                                 )
@@ -57,7 +70,7 @@
                 ]"
                 #dtRecentDeviceUsage
                 (onFilter)="onFilter($event, dtRecentDeviceUsage)"
-                [value]="welcomeEmailsData"
+                [value]="recentDeviceUsageData"
                 [paginator]="true"
                 dataKey="id"
                 [rows]="50"
@@ -65,35 +78,30 @@
                 [showCurrentPageReport]="true"
                 [scrollable]="true"
                 currentPageReportTemplate="Rows {first} to {last} of {totalRecords}"
-                [globalFilterFields]="['datetimestamp', 'email']"
+                [globalFilterFields]="['datetimestamp', 'deviceName']"
             >
                 <ng-template pTemplate="header">
                     <tr class="table-row-style">
-                        <th pSortableColumn="datetimestamp">
+                        <th pSortableColumn="dateTimeStamp">
                             TIMESTAMP
-                            <p-sortIcon field="datetimestamp"></p-sortIcon>
+                            <p-sortIcon field="dateTimeStamp"></p-sortIcon>
                         </th>
-                        <th pSortableColumn="email">
-                            EMAIL <p-sortIcon field="email"></p-sortIcon>
+                        <th pSortableColumn="deviceName">
+                            DEVICE NAME
+                            <p-sortIcon field="deviceName"></p-sortIcon>
                         </th>
                     </tr>
                 </ng-template>
-                <ng-template pTemplate="body" let-welcomeEmailsData>
+                <ng-template pTemplate="body" let-recentDeviceUsageData>
                     <tr style="height: 25px">
-                        <td>
+                        <td nowrap>
                             {{
-                                welcomeEmailsData.datetimestamp
-                                    | date : "MMM d, y, h:mm:ss a"
+                                recentDeviceUsageData.datetimestamp
+                                    | date : "MMM d, yy, h:mm a"
                             }}
                         </td>
                         <td>
-                            <a
-                                href="mailto:{{
-                                    welcomeEmailsData.email
-                                }}?subject=Recent Login Subject
-                            "
-                                >{{ welcomeEmailsData.email }}</a
-                            >
+                            {{ recentDeviceUsageData.deviceName }}
                         </td>
                     </tr>
                 </ng-template>
@@ -101,4 +109,4 @@
         </div>
     </div>
 </div>
-<!-- joea7888 -->
+  <!-- joea7888 --> 

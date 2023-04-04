@@ -77,11 +77,11 @@
             "label": "Recent Device Usage",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
-            "isAvailable": false,
+            "isAvailable": true,
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": true
+            "isPrintable": false
         }
     ],
     "GuamUsers": [
@@ -264,6 +264,63 @@
             "email": "ashly.wilson@amazon.com",
             "impersonationEmail": "sue.dye@yahoo.com",
             "dateTimeStamp": "2023-07-09T13:28:06.419Z"
+        }
+    ],
+    "RecentDeviceUsage": [
+        {
+            "id": 1,
+            "deviceName": "LepakG",
+            "dateTimeStamp": "2023-09-11T13:28:06.419Z"
+        },
+        {
+            "id": 2,
+            "deviceName": "Pam",
+            "dateTimeStamp": "2023-09-12T13:28:06.419Z"
+        },
+        {
+            "id": 3,
+            "deviceName": "Imelda Lopez",
+            "dateTimeStamp": "2023-09-12T13:28:06.419Z"
+        },
+        {
+            "id": 4,
+            "deviceName": "Mikayla",
+            "dateTimeStamp": "2023-09-14T13:28:06.419Z"
+        },
+        {
+            "id": 5,
+            "deviceName": "LepakG",
+            "dateTimeStamp": "2023-09-15T13:28:06.419Z"
+        },
+        {
+            "id": 6,
+            "deviceName": "Rayn.Wakeland",
+            "dateTimeStamp": "2023-09-15T13:28:06.419Z"
+        },
+        {
+            "id": 7,
+            "deviceName": "Ibm.Pc",
+            "dateTimeStamp": "2023-09-16T13:28:06.419Z"
+        },
+        {
+            "id": 8,
+            "deviceName": "Dell.Chop",
+            "dateTimeStamp": "2023-09-17T13:28:06.419Z"
+        },
+        {
+            "id": 9,
+            "deviceName": "Acer.Hub",
+            "dateTimeStamp": "2023-09-18T13:28:06.419Z"
+        },
+        {
+            "id": 10,
+            "deviceName": "Intel.Core",
+            "dateTimeStamp": "2023-09-19T13:28:06.419Z"
+        },
+        {
+            "id": 11,
+            "deviceName": "gateway.nexgen",
+            "dateTimeStamp": "2023-09-13T13:28:06.419Z"
         }
     ]
 }

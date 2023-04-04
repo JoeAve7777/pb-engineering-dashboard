@@ -9,4 +9,5 @@ export abstract class AppConfiguration {
   GuamUsers?:any;
   RecentLogins?: any;
   RecentImpersonations?: any;
+  RecentDeviceUsage?:any;
 }
