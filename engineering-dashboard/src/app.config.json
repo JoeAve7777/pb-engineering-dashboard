@@ -82,6 +82,17 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": true
+        },
+        {
+            "id": "8",
+            "label": "Sample Graph",
+            "iconClass": "fa-duotone fa-line-chart",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true
         }
     ],
     "GuamUsers": [
