@@ -41,4 +41,13 @@ export class TotalUsersComponent implements OnInit, OnDestroy {
             this.totalUsersOb$.unsubscribe();
         }
     }
+
+    onPrint()
+    {
+         this.dashboardCardItem.isActive=true;
+       
+         window.print();
+    
+         return false; 
+    }
 }

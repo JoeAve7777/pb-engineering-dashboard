@@ -9,7 +9,7 @@
                     <td>
                         <a
                             *ngIf="dashboardCardItem.isPrintable"
-                            onclick="window.print();return false;"
+                            (click)="onPrint()"
                             title="Print"
                             href="#"
                             ><i class="fa fa-print fa-lg mr-3 d-print-none"></i

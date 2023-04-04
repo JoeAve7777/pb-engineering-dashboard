@@ -8,4 +8,5 @@ export interface DashboardCardItem {
     isSearchable:boolean;
     isExportable:boolean;
     isPrintable:boolean;
+    isActive:boolean;
 }

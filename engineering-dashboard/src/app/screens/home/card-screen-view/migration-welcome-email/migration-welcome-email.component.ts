@@ -40,4 +40,12 @@ export class MigrationWelcomeEmailComponent implements OnInit, OnDestroy {
             this.migrationWelcomeEmailOb$.unsubscribe();
         }
     }
+
+    onPrint() {
+        this.dashboardCardItem.isActive = true;
+
+        window.print();
+
+        return false;
+    }
 }
