@@ -14,7 +14,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": true,
-            "isExportable": true
+            "isExportable": true,
+            "isPrintable":false
         },
         {
             "id": "2",
@@ -24,7 +25,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": true,
-            "isExportable": true
+            "isExportable": true,
+            "isPrintable":false
         },
         {
             "id": "3",
@@ -34,7 +36,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": true,
-            "isExportable": true
+            "isExportable": true,
+            "isPrintable":false
         },
         {
             "id": "4",
@@ -44,7 +47,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": true,
-            "isExportable": true
+            "isExportable": true,
+            "isPrintable":false
         },
         {
             "id": "5",
@@ -54,7 +58,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": false,
-            "isExportable": false
+            "isExportable": false,
+            "isPrintable":true
         },
         {
             "id": "6",
@@ -64,7 +69,8 @@
             "isAvailable": true,
             "isVisible": true,
             "isSearchable": false,
-            "isExportable": false
+            "isExportable": false,
+            "isPrintable":true
         },
         {
             "id": "7",
@@ -74,7 +80,8 @@
             "isAvailable": false,
             "isVisible": true,
             "isSearchable": true,
-            "isExportable": true
+            "isExportable": true,
+            "isPrintable":true
         }
     ],
     "GuamUsers": [

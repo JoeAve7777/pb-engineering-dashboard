@@ -1,1 +1,33 @@
 // you can use this to add your app's styles
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    a:link {
+        border-bottom: none !important;
+
+        text-decoration: none !important;
+
+        color: black;
+    }
+
+    a[href]:after {
+        content: none !important;
+
+        color: black;
+    }
+
+    #print-div-5,
+    #print-div-5 * {
+        visibility: visible;
+    }
+    #print-div-5 {
+        height: auto;
+        position: fixed;
+        left: 10px;
+        top: 0px;
+        width: 1000px;
+    }
+}

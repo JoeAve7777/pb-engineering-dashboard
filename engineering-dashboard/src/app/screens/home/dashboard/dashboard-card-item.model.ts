@@ -7,4 +7,5 @@ export interface DashboardCardItem {
     isVisible: boolean;
     isSearchable:boolean;
     isExportable:boolean;
+    isPrintable:boolean;
 }

@@ -12,7 +12,7 @@
                             (click)="onExportPdf()"
                             title="Export to PDF"
                             href="#"
-                            ><i class="fa fa-file-pdf-o fa-lg mr-3"></i
+                            ><i class="fa fa-file-pdf-o fa-lg mr-3 d-print-none"></i
                         ></a>
                     </td>
                     <td>
@@ -21,14 +21,23 @@
                             (click)="onExportExcel()"
                             title="Export to Excel"
                             href="#"
-                            ><i class="fa fa-file-excel-o fa-lg mr-3"></i
+                            ><i class="fa fa-file-excel-o fa-lg mr-3 d-print-none"></i
+                        ></a>
+                    </td>
+                    <td>
+                        <a
+                            *ngIf="dashboardCardItem.isPrintable"
+                            onclick="window.print();return false;"
+                            title="Print"
+                            href="#"
+                            ><i class="fa fa-print fa-lg mr-3 d-print-none"></i
                         ></a>
                     </td>
                     <td>
                         <input
                             *ngIf="dashboardCardItem.isSearchable"
                             title="Search Keyword"
-                            class="form-control search-filter"
+                            class="form-control search-filter d-print-none"
                             pInputText
                             type="text"
                             (input)="
