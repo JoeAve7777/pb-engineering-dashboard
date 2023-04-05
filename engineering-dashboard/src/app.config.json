@@ -1,6 +1,6 @@
 {
     "title": "PB Engineering Dashboard",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "copyRight": "©1996-2022 Pitney Bowes Inc. All rights reserved.",
     "apiBaseUrl": "http://localhost:4000/",
     "apiAuthenticate": "https://g5td3nfq5m.execute-api.us-east-1.amazonaws.com/dev/fetchuserdetails?email=@email&password=@password",
