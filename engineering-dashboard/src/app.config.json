@@ -15,7 +15,8 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false
+            "isPrintable": false,
+            "isCopy": false
         },
         {
             "id": "3",
@@ -26,7 +27,8 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false
+            "isPrintable": false,
+            "isCopy": false
         },
         {
             "id": "7",
@@ -37,7 +39,8 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false
+            "isPrintable": false,
+            "isCopy": false
         },
         {
             "id": "1",
@@ -48,7 +51,8 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false
+            "isPrintable": false,
+            "isCopy": false
         },
         {
             "id": "6",
@@ -59,7 +63,8 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true
+            "isPrintable": true,
+            "isCopy": false
         },
         {
             "id": "4",
@@ -70,7 +75,8 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false
+            "isPrintable": false,
+            "isCopy": false
         },
         {
             "id": "5",
@@ -81,7 +87,8 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true
+            "isPrintable": true,
+            "isCopy": false
         },
         {
             "id": "8",
@@ -92,7 +99,8 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true
+            "isPrintable": true,
+            "isCopy": false
         }
     ],
     "GuamUsers": [
