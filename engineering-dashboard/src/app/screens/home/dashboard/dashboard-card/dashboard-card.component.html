@@ -82,10 +82,17 @@
                 [dashboardCardItem]="dashboardCardItem"
             ></app-recent-device-usage>
         </div>
+
         <div *ngSwitchCase="'8'">
             <app-bar-chart-widget
                 [dashboardCardItem]="dashboardCardItem"
             ></app-bar-chart-widget>
+        </div>
+
+        <div *ngSwitchCase="'9'">
+            <app-total-devices-created
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-devices-created>
         </div>
 
         <div *ngSwitchDefault>
@@ -95,4 +102,4 @@
         </div>
     </div>
 </p-card>
-   <!-- joea7888 -->  
+<!-- joea7888 -->  

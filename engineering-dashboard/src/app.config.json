@@ -101,6 +101,18 @@
             "isExportable": false,
             "isPrintable": true,
             "isCopy": false
+        },
+        {
+            "id": "9",
+            "label": "Total Devices Count",
+            "iconClass": "fa-duotone  fa-tablet",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
         }
     ],
     "GuamUsers": [
