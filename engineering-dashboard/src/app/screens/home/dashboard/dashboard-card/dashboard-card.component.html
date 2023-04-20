@@ -107,6 +107,18 @@
             ></app-total-device-logins>
         </div>
 
+        <div *ngSwitchCase="'12'">
+            <app-total-pickup-slips-locked
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-pickup-slips-locked>
+        </div>
+
+        <div *ngSwitchCase="'13'">
+            <app-total-pickup-slips-myaccount
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-pickup-slips-myaccount>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->

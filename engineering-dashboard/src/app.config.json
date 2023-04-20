@@ -137,6 +137,30 @@
             "isExportable": false,
             "isPrintable": true,
             "isCopy": false
+        },
+        {
+            "id": "12",
+            "label": "Total Pickup Slips Locked in NGMA",
+            "iconClass": "fa-regular fa-truck",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
+        },
+        {
+            "id": "13",
+            "label": "Total Pickup Slips Created Via Myaccount",
+            "iconClass": "fa-regular fa-truck",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
         }
     ],
     "GuamUsers": [
