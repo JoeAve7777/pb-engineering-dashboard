@@ -26,6 +26,8 @@ import { MigrationWelcomeEmailComponent } from "./card-screen-view/migration-wel
 import { RecentDeviceUsageComponent } from "./card-screen-view/recent-device-usage/recent-device-usage.component";
 import { TotalUsersComponent } from "./card-screen-view/total-users/total-users.component";
 import {TotalDevicesCreatedComponent} from "./card-screen-view/total-devices-created/total-devices-created.component";
+import {TotalImpersonationsComponent} from "./card-screen-view/total-impersonations/total-impersonations.component";
+import {TotalDeviceLoginsComponent} from "./card-screen-view/total-device-logins/total-device-logins.component";
 
 @NgModule({
     imports: [
@@ -52,7 +54,9 @@ import {TotalDevicesCreatedComponent} from "./card-screen-view/total-devices-cre
         MigrationWelcomeEmailComponent,
         RecentDeviceUsageComponent,
         TotalUsersComponent,
-        TotalDevicesCreatedComponent
+        TotalDevicesCreatedComponent,
+        TotalImpersonationsComponent,
+        TotalDeviceLoginsComponent
     ],
     providers: [
         DatePipe,
