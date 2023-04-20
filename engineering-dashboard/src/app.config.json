@@ -104,7 +104,7 @@
         },
         {
             "id": "9",
-            "label": "Total Devices Created",
+            "label": "Total Devices Created By Client Services",
             "iconClass": "fa-duotone  fa-tablet",
             "isExpandable": false,
             "isAvailable": true,
