@@ -28,6 +28,8 @@ import { TotalUsersComponent } from "./card-screen-view/total-users/total-users.
 import {TotalDevicesCreatedComponent} from "./card-screen-view/total-devices-created/total-devices-created.component";
 import {TotalImpersonationsComponent} from "./card-screen-view/total-impersonations/total-impersonations.component";
 import {TotalDeviceLoginsComponent} from "./card-screen-view/total-device-logins/total-device-logins.component";
+import {TotalPickupSlipsLockedComponent} from "./card-screen-view/total-pickup-slips-locked/total-pickup-slips-locked.component";
+import {TotalPickupSlipsMyaccountComponent} from "./card-screen-view/total-pickup-slips-myaccount/total-pickup-slips-myaccount.component";
 
 @NgModule({
     imports: [
@@ -56,7 +58,9 @@ import {TotalDeviceLoginsComponent} from "./card-screen-view/total-device-logins
         TotalUsersComponent,
         TotalDevicesCreatedComponent,
         TotalImpersonationsComponent,
-        TotalDeviceLoginsComponent
+        TotalDeviceLoginsComponent,
+        TotalPickupSlipsLockedComponent,
+        TotalPickupSlipsMyaccountComponent
     ],
     providers: [
         DatePipe,

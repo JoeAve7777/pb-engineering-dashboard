@@ -113,6 +113,30 @@
             "isExportable": false,
             "isPrintable": true,
             "isCopy": false
+        },
+        {
+            "id": "10",
+            "label": "Total Impersonations",
+            "iconClass": "fa-regular fa-user-secret",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
+        },
+        {
+            "id": "11",
+            "label": "Total Device Logins",
+            "iconClass": "fa-regular fa-tablet",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
         }
     ],
     "GuamUsers": [

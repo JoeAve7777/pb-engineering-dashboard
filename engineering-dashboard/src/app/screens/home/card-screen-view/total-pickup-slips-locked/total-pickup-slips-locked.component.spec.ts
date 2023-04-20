@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TotalDevicesCreatedComponent } from './total-devices-created.component';
+import { TotalPickupSlipsLockedComponent } from './total-pickup-slips-locked.component';
 
-describe('TotalDevicesCreatedComponent', () => {
-  let component: TotalDevicesCreatedComponent;
-  let fixture: ComponentFixture<TotalDevicesCreatedComponent>;
+describe('TotalPickupSlipsLockedComponent', () => {
+  let component: TotalPickupSlipsLockedComponent;
+  let fixture: ComponentFixture<TotalPickupSlipsLockedComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TotalDevicesCreatedComponent ]
+      declarations: [ TotalPickupSlipsLockedComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TotalDevicesCreatedComponent);
+    fixture = TestBed.createComponent(TotalPickupSlipsLockedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

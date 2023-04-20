@@ -95,6 +95,18 @@
             ></app-total-devices-created>
         </div>
 
+        <div *ngSwitchCase="'10'">
+            <app-total-impersonations
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-impersonations>
+        </div>
+
+        <div *ngSwitchCase="'11'">
+            <app-total-device-logins
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-device-logins>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->
