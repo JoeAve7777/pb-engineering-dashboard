@@ -104,7 +104,7 @@
         },
         {
             "id": "9",
-            "label": "Total Devices Count",
+            "label": "Total Devices Created",
             "iconClass": "fa-duotone  fa-tablet",
             "isExpandable": false,
             "isAvailable": true,
