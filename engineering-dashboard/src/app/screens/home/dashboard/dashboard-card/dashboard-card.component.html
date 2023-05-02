@@ -62,28 +62,97 @@
             ></app-new-guam-users>
         </div>
 
-        <div *ngSwitchCase="'5'">
+        <!-- <div *ngSwitchCase="'5'">
             <app-migration-welcome-email
                 (dataLoadCompleted)="callMeBack()"
                 [dashboardCardItem]="dashboardCardItem"
             ></app-migration-welcome-email>
-        </div>
+        </div> -->
 
-        <div *ngSwitchCase="'6'">
+        <!-- <div *ngSwitchCase="'6'">
             <app-total-users
                 (dataLoadCompleted)="callMeBack()"
                 [dashboardCardItem]="dashboardCardItem"
             ></app-total-users>
+        </div> -->
+
+        <div *ngSwitchCase="'5'">
+            <app-total-screen-5
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-5>
+        </div>
+
+        <div *ngSwitchCase="'6'">
+            <app-total-screen-6
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-6>
         </div>
 
         <div *ngSwitchCase="'7'">
+            <app-total-screen-7
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-7>
+        </div>
+
+        <div *ngSwitchCase="'8'">
+            <app-total-screen-8
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-8>
+        </div>
+
+        <div *ngSwitchCase="'9'">
+            <app-total-screen-9
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-9>
+        </div>
+
+        <div *ngSwitchCase="'10'">
+            <app-total-screen-10
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-10>
+        </div>
+
+        <div *ngSwitchCase="'11'">
+            <app-total-screen-11
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-11>
+        </div>
+
+        <div *ngSwitchCase="'12'">
+            <app-total-screen-12
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-12>
+        </div>
+
+        <div *ngSwitchCase="'13'">
+            <app-total-screen-13
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-13>
+        </div>
+
+        <div *ngSwitchCase="'18'">
+            <app-bar-chart-widget
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-bar-chart-widget>
+        </div>
+
+        <!-- <div *ngSwitchCase="'7'">
             <app-recent-device-usage
                 (dataLoadCompleted)="callMeBack()"
                 [dashboardCardItem]="dashboardCardItem"
             ></app-recent-device-usage>
-        </div>
+        </div> -->
 
-        <div *ngSwitchCase="'8'">
+        <!-- <div *ngSwitchCase="'18'">
             <app-bar-chart-widget
                 [dashboardCardItem]="dashboardCardItem"
             ></app-bar-chart-widget>
@@ -117,7 +186,7 @@
             <app-total-pickup-slips-myaccount
                 [dashboardCardItem]="dashboardCardItem"
             ></app-total-pickup-slips-myaccount>
-        </div>
+        </div> -->
 
         <div *ngSwitchDefault>
             <p>
@@ -126,4 +195,4 @@
         </div>
     </div>
 </p-card>
-<!-- joea7888 -->  
+<!-- joea7888 -->

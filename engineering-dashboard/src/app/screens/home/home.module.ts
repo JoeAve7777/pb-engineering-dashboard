@@ -30,6 +30,15 @@ import {TotalImpersonationsComponent} from "./card-screen-view/total-impersonati
 import {TotalDeviceLoginsComponent} from "./card-screen-view/total-device-logins/total-device-logins.component";
 import {TotalPickupSlipsLockedComponent} from "./card-screen-view/total-pickup-slips-locked/total-pickup-slips-locked.component";
 import {TotalPickupSlipsMyaccountComponent} from "./card-screen-view/total-pickup-slips-myaccount/total-pickup-slips-myaccount.component";
+import { TotalScreen5Component } from "./card-screen-view/total-screen-5/total-screen-5.component";
+import { TotalScreen6Component } from "./card-screen-view/total-screen-6/total-screen-6.component";
+import { TotalScreen7Component } from "./card-screen-view/total-screen-7/total-screen-7.component";
+import { TotalScreen8Component } from "./card-screen-view/total-screen-8/total-screen-8.component";
+import { TotalScreen9Component } from "./card-screen-view/total-screen-9/total-screen-9.component";
+import { TotalScreen10Component } from "./card-screen-view/total-screen-10/total-screen-10.component";
+import { TotalScreen11Component } from "./card-screen-view/total-screen-11/total-screen-11.component";
+import { TotalScreen12Component } from "./card-screen-view/total-screen-12/total-screen-12.component";
+import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total-screen-13.component";
 
 @NgModule({
     imports: [
@@ -60,7 +69,16 @@ import {TotalPickupSlipsMyaccountComponent} from "./card-screen-view/total-picku
         TotalImpersonationsComponent,
         TotalDeviceLoginsComponent,
         TotalPickupSlipsLockedComponent,
-        TotalPickupSlipsMyaccountComponent
+        TotalPickupSlipsMyaccountComponent,
+        TotalScreen5Component,
+        TotalScreen6Component,
+        TotalScreen7Component,
+        TotalScreen8Component,
+        TotalScreen9Component,
+        TotalScreen10Component,
+        TotalScreen11Component,
+        TotalScreen12Component,
+        TotalScreen13Component
     ],
     providers: [
         DatePipe,

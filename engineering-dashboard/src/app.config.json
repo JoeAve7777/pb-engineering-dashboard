@@ -7,8 +7,22 @@
     "apiSentWelcomeEmail": "https://63fe4c94370fe830d9d21389.mockapi.io/api/v1/welcomeemails",
     "cardsMetaData": [
         {
+            "id": "1",
+            "label": "Migration Welcome Emails",
+            "description": "",
+            "iconClass": "fa-share",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": true,
+            "isExportable": true,
+            "isPrintable": false,
+            "isCopy": false
+        },
+        {
             "id": "2",
             "label": "Recent Login",
+            "description": "",
             "iconClass": "fa-sharp fa-solid fa-user",
             "isExpandable": false,
             "isAvailable": true,
@@ -20,6 +34,7 @@
         },
         {
             "id": "3",
+            "description": "",
             "label": "Recent Impersonation",
             "iconClass": "fa-regular fa-user-secret",
             "isExpandable": false,
@@ -31,43 +46,8 @@
             "isCopy": false
         },
         {
-            "id": "7",
-            "label": "Recent Device Usage",
-            "iconClass": "fa-duotone fa-users",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": true,
-            "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
-        },
-        {
-            "id": "1",
-            "label": "Migration Welcome Emails",
-            "iconClass": "fa-share",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": true,
-            "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
-        },
-        {
-            "id": "6",
-            "label": "Total Users",
-            "iconClass": "fa-duotone fa-user-plus",
-            "isExpandable": false,
-            "isAvailable": true,
-            "isVisible": true,
-            "isSearchable": false,
-            "isExportable": false,
-            "isPrintable": true,
-            "isCopy": false
-        },
-        {
             "id": "4",
+            "description": "",
             "label": "All New Guam Users - Migration / AddNew",
             "iconClass": "fa-duotone fa-users",
             "isExpandable": false,
@@ -81,6 +61,7 @@
         {
             "id": "5",
             "label": "Migration Welcome Emails Count",
+            "description": "Migration Welcome Emails Count",
             "iconClass": "fa-duotone fa-cubes",
             "isExpandable": false,
             "isAvailable": true,
@@ -91,9 +72,10 @@
             "isCopy": false
         },
         {
-            "id": "9",
-            "label": "Total Devices Created By Client Services",
-            "iconClass": "fa-duotone  fa-tablet",
+            "id": "6",
+            "label": "Add New Users",
+            "description": "Total ‘Add New Users’ added by PB Client Services",
+            "iconClass": "fa-duotone fa-user-plus",
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
@@ -103,8 +85,35 @@
             "isCopy": false
         },
         {
-            "id": "10",
+            "id": "7",
+            "label": "Devices Created",
+            "description": "Total ‘devices created’ - added by PB Client Services / Impersonation",
+            "iconClass": "fa-duotone fa-user-plus",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
+        },
+        {
+            "id": "8",
+            "label": "Devices Created",
+            "description": "Total ‘Devices Created’ added by Clients Self Service",
+            "iconClass": "fa-duotone fa-users",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": true,
+            "isExportable": true,
+            "isPrintable": false,
+            "isCopy": false
+        },
+        {
+            "id": "9",
             "label": "Total Impersonations",
+            "description": "Total Impersonations",
             "iconClass": "fa-regular fa-user-secret",
             "isExpandable": false,
             "isAvailable": true,
@@ -115,9 +124,23 @@
             "isCopy": false
         },
         {
-            "id": "11",
+            "id": "10",
             "label": "Total Device Logins",
+            "description": "Total Device Logins",
             "iconClass": "fa-regular fa-tablet",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
+        },
+        {
+            "id": "11",
+            "label": "Total Pickup Slips Locked in NGMA",
+            "description": "Total Pickup Clips created in NGMA - by Device or by User",
+            "iconClass": "fa-regular fa-truck",
             "isExpandable": false,
             "isAvailable": true,
             "isVisible": true,
@@ -129,6 +152,7 @@
         {
             "id": "12",
             "label": "Total Pickup Slips Locked in NGMA",
+            "description": "Total Pickup Clips created in NGMA",
             "iconClass": "fa-regular fa-truck",
             "isExpandable": false,
             "isAvailable": true,
@@ -141,6 +165,7 @@
         {
             "id": "13",
             "label": "Total Pickup Slips Created Via Myaccount",
+            "description": "Total Pickup Slips Created Via Myaccount",
             "iconClass": "fa-regular fa-truck",
             "isExpandable": false,
             "isAvailable": true,
@@ -151,8 +176,9 @@
             "isCopy": false
         },
         {
-            "id": "8",
+            "id": "18",
             "label": "Sample Graph",
+            "description": "",
             "iconClass": "fa-duotone fa-line-chart",
             "isExpandable": false,
             "isAvailable": true,

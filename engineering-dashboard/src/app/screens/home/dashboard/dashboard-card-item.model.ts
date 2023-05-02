@@ -1,6 +1,7 @@
 export interface DashboardCardItem {
     id: string;
     label: string;
+    description: string;
     iconClass: string;
     isExpandable: boolean;
     isAvailable: boolean;
