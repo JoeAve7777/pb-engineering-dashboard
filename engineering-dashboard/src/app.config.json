@@ -46,6 +46,19 @@
             "isCopy": false
         },
         {
+            "id": "14",
+            "label": "Recent Device Usage",
+            "description": "",
+            "iconClass": "fa-sharp fa-solid fa-user",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": true,
+            "isExportable": true,
+            "isPrintable": false,
+            "isCopy": false
+        },
+        {
             "id": "4",
             "description": "",
             "label": "All New Guam Users - Migration / AddNew",

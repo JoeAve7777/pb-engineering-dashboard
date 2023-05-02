@@ -24,12 +24,6 @@ import { RecentImpersonationComponent } from "./card-screen-view/recent-imperson
 import { NewGuamUsersComponent } from "./card-screen-view/new-guam-users/new-guam-users.component";
 import { MigrationWelcomeEmailComponent } from "./card-screen-view/migration-welcome-email/migration-welcome-email.component";
 import { RecentDeviceUsageComponent } from "./card-screen-view/recent-device-usage/recent-device-usage.component";
-import { TotalUsersComponent } from "./card-screen-view/total-users/total-users.component";
-import {TotalDevicesCreatedComponent} from "./card-screen-view/total-devices-created/total-devices-created.component";
-import {TotalImpersonationsComponent} from "./card-screen-view/total-impersonations/total-impersonations.component";
-import {TotalDeviceLoginsComponent} from "./card-screen-view/total-device-logins/total-device-logins.component";
-import {TotalPickupSlipsLockedComponent} from "./card-screen-view/total-pickup-slips-locked/total-pickup-slips-locked.component";
-import {TotalPickupSlipsMyaccountComponent} from "./card-screen-view/total-pickup-slips-myaccount/total-pickup-slips-myaccount.component";
 import { TotalScreen5Component } from "./card-screen-view/total-screen-5/total-screen-5.component";
 import { TotalScreen6Component } from "./card-screen-view/total-screen-6/total-screen-6.component";
 import { TotalScreen7Component } from "./card-screen-view/total-screen-7/total-screen-7.component";
@@ -64,12 +58,6 @@ import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total
         NewGuamUsersComponent,
         MigrationWelcomeEmailComponent,
         RecentDeviceUsageComponent,
-        TotalUsersComponent,
-        TotalDevicesCreatedComponent,
-        TotalImpersonationsComponent,
-        TotalDeviceLoginsComponent,
-        TotalPickupSlipsLockedComponent,
-        TotalPickupSlipsMyaccountComponent,
         TotalScreen5Component,
         TotalScreen6Component,
         TotalScreen7Component,

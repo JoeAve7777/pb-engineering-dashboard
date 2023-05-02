@@ -62,20 +62,6 @@
             ></app-new-guam-users>
         </div>
 
-        <!-- <div *ngSwitchCase="'5'">
-            <app-migration-welcome-email
-                (dataLoadCompleted)="callMeBack()"
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-migration-welcome-email>
-        </div> -->
-
-        <!-- <div *ngSwitchCase="'6'">
-            <app-total-users
-                (dataLoadCompleted)="callMeBack()"
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-users>
-        </div> -->
-
         <div *ngSwitchCase="'5'">
             <app-total-screen-5
                 (dataLoadCompleted)="callMeBack()"
@@ -139,54 +125,18 @@
             ></app-total-screen-13>
         </div>
 
+        <div *ngSwitchCase="'14'">
+            <app-recent-device-usage
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-recent-device-usage>
+        </div> 
+
         <div *ngSwitchCase="'18'">
             <app-bar-chart-widget
                 [dashboardCardItem]="dashboardCardItem"
             ></app-bar-chart-widget>
         </div>
-
-        <!-- <div *ngSwitchCase="'7'">
-            <app-recent-device-usage
-                (dataLoadCompleted)="callMeBack()"
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-recent-device-usage>
-        </div> -->
-
-        <!-- <div *ngSwitchCase="'18'">
-            <app-bar-chart-widget
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-bar-chart-widget>
-        </div>
-
-        <div *ngSwitchCase="'9'">
-            <app-total-devices-created
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-devices-created>
-        </div>
-
-        <div *ngSwitchCase="'10'">
-            <app-total-impersonations
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-impersonations>
-        </div>
-
-        <div *ngSwitchCase="'11'">
-            <app-total-device-logins
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-device-logins>
-        </div>
-
-        <div *ngSwitchCase="'12'">
-            <app-total-pickup-slips-locked
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-pickup-slips-locked>
-        </div>
-
-        <div *ngSwitchCase="'13'">
-            <app-total-pickup-slips-myaccount
-                [dashboardCardItem]="dashboardCardItem"
-            ></app-total-pickup-slips-myaccount>
-        </div> -->
 
         <div *ngSwitchDefault>
             <p>
