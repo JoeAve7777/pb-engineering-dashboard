@@ -22,7 +22,6 @@ import { SentWelcomeEmailComponent } from "./card-screen-view/sent-welcome-email
 import { RecentLoginsComponent } from "./card-screen-view/recent-logins/recent-logins.component";
 import { RecentImpersonationComponent } from "./card-screen-view/recent-impersonation/recent-impersonation.component";
 import { NewGuamUsersComponent } from "./card-screen-view/new-guam-users/new-guam-users.component";
-import { MigrationWelcomeEmailComponent } from "./card-screen-view/migration-welcome-email/migration-welcome-email.component";
 import { RecentDeviceUsageComponent } from "./card-screen-view/recent-device-usage/recent-device-usage.component";
 import { TotalScreen5Component } from "./card-screen-view/total-screen-5/total-screen-5.component";
 import { TotalScreen6Component } from "./card-screen-view/total-screen-6/total-screen-6.component";
@@ -58,7 +57,6 @@ import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total
         RecentLoginsComponent,
         RecentImpersonationComponent,
         NewGuamUsersComponent,
-        MigrationWelcomeEmailComponent,
         RecentDeviceUsageComponent,
         TotalScreen5Component,
         TotalScreen6Component,
