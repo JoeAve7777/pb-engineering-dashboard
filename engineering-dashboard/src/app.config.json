@@ -202,6 +202,19 @@
             "isCopy": false
         },
         {
+            "id": "16",
+            "label": "Total Production Users",
+            "description": "Total Production Users, + Not Including Our Test Users",
+            "iconClass": "fa-duotone fa-user-plus",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": true,
+            "isCopy": false
+        },
+        {
             "id": "18",
             "label": "Sample Graph",
             "description": "",

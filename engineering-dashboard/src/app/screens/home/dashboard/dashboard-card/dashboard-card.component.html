@@ -139,6 +139,13 @@
             ></app-total-screen-15>
         </div>
 
+        <div *ngSwitchCase="'16'">
+            <app-total-screen-16
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-16>
+        </div>
+
         <div *ngSwitchCase="'18'">
             <app-bar-chart-widget
                 [dashboardCardItem]="dashboardCardItem"
