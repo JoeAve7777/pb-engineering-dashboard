@@ -6,7 +6,7 @@
         <div class="p-card-title">
             <pbds-progress-spinner
                 title="Processing"
-                style="margin-right: 20px"
+                class="cls-progress-spinner"
                 size="24"
                 *ngIf="showSpinner"
             ></pbds-progress-spinner>
@@ -15,7 +15,7 @@
                 aria-hidden="true"
             ></i
             ><b>{{ dashboardCardItem.label }}</b>
-            <span style="float: right; cursor: pointer; font-weight: bold">
+            <span class="card-span">
                 <i
                     title="Expand"
                     class="fa fa-expand fa-lg mr-3 d-print-none"
@@ -130,7 +130,7 @@
                 (dataLoadCompleted)="callMeBack()"
                 [dashboardCardItem]="dashboardCardItem"
             ></app-recent-device-usage>
-        </div> 
+        </div>
 
         <div *ngSwitchCase="'15'">
             <app-total-screen-15
@@ -159,4 +159,4 @@
         </div>
     </div>
 </p-card>
-<!-- joea7888 -->
+<!-- refresh -->
