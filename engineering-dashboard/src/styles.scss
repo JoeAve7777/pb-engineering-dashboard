@@ -1,2 +1,12 @@
 // your project imports, add as many as you need
 @import '../src/sass/sample';
+
+
+.card-screen-caption {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.card-controls-span {
+    display: inline-block;
+}
