@@ -132,6 +132,13 @@
             ></app-recent-device-usage>
         </div> 
 
+        <div *ngSwitchCase="'15'">
+            <app-total-screen-15
+                (dataLoadCompleted)="callMeBack()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-total-screen-15>
+        </div>
+
         <div *ngSwitchCase="'18'">
             <app-bar-chart-widget
                 [dashboardCardItem]="dashboardCardItem"
@@ -145,4 +152,4 @@
         </div>
     </div>
 </p-card>
-<!-- joea7888 -->
+<!--joea7888-->

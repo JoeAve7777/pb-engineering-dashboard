@@ -33,6 +33,7 @@ import { TotalScreen10Component } from "./card-screen-view/total-screen-10/total
 import { TotalScreen11Component } from "./card-screen-view/total-screen-11/total-screen-11.component";
 import { TotalScreen12Component } from "./card-screen-view/total-screen-12/total-screen-12.component";
 import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total-screen-13.component";
+import { TotalScreen15Component } from "./card-screen-view/total-screen-15/total-screen-15.component";
 
 @NgModule({
     imports: [
@@ -66,7 +67,8 @@ import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total
         TotalScreen10Component,
         TotalScreen11Component,
         TotalScreen12Component,
-        TotalScreen13Component
+        TotalScreen13Component,
+        TotalScreen15Component
     ],
     providers: [
         DatePipe,
