@@ -17,9 +17,7 @@ export class DashboardCardComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        if (this.dashboardCardItem.id == "1") {
-            this.showSpinner = true;
-        }
+        this.showSpinner = true;
     }
 
     onClick() {
@@ -30,7 +28,9 @@ export class DashboardCardComponent implements OnInit {
         this.dashboardCardExpanded.emit(this.dashboardCardItem);
     }
 
-    callMeBack() {
+    onDataLoadedCompleted() {
+
+        //alert();
         this.showSpinner = false;
     }
 }

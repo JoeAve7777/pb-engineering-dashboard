@@ -24,7 +24,7 @@ export class TotalScreen5Component implements OnInit, OnDestroy {
     Ob$!: Subscription;
 
     screenCaption: string = "Since 1 month ago";
-    screenCount = 0;
+    screenCount = "";
 
     constructor(private totalScreenService: TotalScreenService) {}
 
