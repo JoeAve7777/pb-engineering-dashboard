@@ -25,7 +25,7 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    guamUsersOb$!: Subscription;
+    observable$!: Subscription;
     guamUsersData: GuamUser[] = [];
     filteredValues: any[] = [];
     cols: any[];
@@ -65,8 +65,8 @@ export class NewGuamUsersComponent implements OnInit, OnDestroy {
         this.filteredValues = event.filteredValue;
     }
     ngOnDestroy(): void {
-        if (this.guamUsersOb$ != null && this.guamUsersOb$ != undefined) {
-            this.guamUsersOb$.unsubscribe();
+        if (this.observable$ != null && this.observable$ != undefined) {
+            this.observable$.unsubscribe();
         }
     }
 

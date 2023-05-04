@@ -25,7 +25,7 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    riOb$!: Subscription;
+    observable$!: Subscription;
     recentImpersonationData: RecentImpersonation[] = [];
     filteredValues: any[] = [];
     cols: any[];
@@ -65,8 +65,8 @@ export class RecentImpersonationComponent implements OnInit, OnDestroy {
         this.filteredValues = event.filteredValue;
     }
     ngOnDestroy(): void {
-        if (this.riOb$ != null && this.riOb$ != undefined) {
-            this.riOb$.unsubscribe();
+        if (this.observable$ != null && this.observable$ != undefined) {
+            this.observable$.unsubscribe();
         }
     }
 

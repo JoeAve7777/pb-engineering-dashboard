@@ -25,7 +25,7 @@ export class RecentDeviceUsageComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    recentDeviceUsageOb$!: Subscription;
+    observable$!: Subscription;
     recentDeviceUsageData: RecentDeviceUsage[] = [];
     filteredValues: any[] = [];
     cols: any[];
@@ -66,10 +66,10 @@ export class RecentDeviceUsageComponent implements OnInit, OnDestroy {
     }
     ngOnDestroy(): void {
         if (
-            this.recentDeviceUsageOb$ != null &&
-            this.recentDeviceUsageOb$ != undefined
+            this.observable$ != null &&
+            this.observable$ != undefined
         ) {
-            this.recentDeviceUsageOb$.unsubscribe();
+            this.observable$.unsubscribe();
         }
     }
 

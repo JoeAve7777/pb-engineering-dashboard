@@ -14,7 +14,7 @@ import { ExportService } from "@app/services/export.service";
 })
 export class SentWelcomeEmailPageComponent implements OnInit {
     filteredValues: any[] = [];
-    welcomeEmailOb$!: Subscription;
+    observable$!: Subscription;
     welcomeEmailsData: WelcomeEmail[] = [];
     cols: any[];
 
@@ -34,7 +34,7 @@ export class SentWelcomeEmailPageComponent implements OnInit {
     loadWelcomeEmailData() {
         document.body.style.cursor = "wait";
 
-        this.welcomeEmailOb$ = this.sentWelcomeEmailService.getAll().subscribe({
+        this.observable$ = this.sentWelcomeEmailService.getAll().subscribe({
             next: (data) => {
                 if (data !== undefined && data !== null) {
                     this.welcomeEmailsData = data.sort((a, b) =>
@@ -56,8 +56,8 @@ export class SentWelcomeEmailPageComponent implements OnInit {
     }
 
     ngOnDestroy(): void {
-        if (this.welcomeEmailOb$ != null && this.welcomeEmailOb$ != undefined) {
-            this.welcomeEmailOb$.unsubscribe();
+        if (this.observable$ != null && this.observable$ != undefined) {
+            this.observable$.unsubscribe();
         }
     }
 

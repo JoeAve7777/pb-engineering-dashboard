@@ -25,7 +25,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    welcomeEmailOb$!: Subscription;
+    observable$!: Subscription;
     welcomeEmailsData: WelcomeEmail[] = [];
     filteredValues: any[] = [];
     cols: any[];
@@ -52,7 +52,7 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
     loadData() {
         document.body.style.cursor = "wait";
 
-        this.welcomeEmailOb$ = this.sentWelcomeEmailService.getAll().subscribe({
+        this.observable$ = this.sentWelcomeEmailService.getAll().subscribe({
             next: (data) => {
                 if (data !== undefined && data !== null) {
                     this.welcomeEmailsData = data.sort((a, b) =>
@@ -77,8 +77,8 @@ export class SentWelcomeEmailComponent implements OnInit, OnDestroy {
         this.filteredValues = event.filteredValue;
     }
     ngOnDestroy(): void {
-        if (this.welcomeEmailOb$ != null && this.welcomeEmailOb$ != undefined) {
-            this.welcomeEmailOb$.unsubscribe();
+        if (this.observable$ != null && this.observable$ != undefined) {
+            this.observable$.unsubscribe();
         }
     }
 

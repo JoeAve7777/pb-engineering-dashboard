@@ -25,7 +25,7 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
     @Input() dashboardCardItem: DashboardCardItem;
     @Output() dataLoadCompleted = new EventEmitter<string>();
 
-    recentLoginsOb$!: Subscription;
+    observable$$!: Subscription;
     recentLoginsData: RecentLogin[] = [];
     filteredValues: any[] = [];
     cols: any[];
@@ -65,8 +65,8 @@ export class RecentLoginsComponent implements OnInit, OnDestroy {
         this.filteredValues = event.filteredValue;
     }
     ngOnDestroy(): void {
-        if (this.recentLoginsOb$ != null && this.recentLoginsOb$ != undefined) {
-            this.recentLoginsOb$.unsubscribe();
+        if (this.observable$$ != null && this.observable$$ != undefined) {
+            this.observable$$.unsubscribe();
         }
     }
 
