@@ -3,7 +3,7 @@
         <label class="card-screen-caption">{{ screenCaption }}</label>
     </div>
     <div class="col-7 text-right">
-        <span style="display: inline-block">
+        <span class="card-controls-span">
             <table>
                 <tr>
                     <td>
@@ -12,7 +12,9 @@
                             (click)="onExportPdf()"
                             title="Export to PDF"
                             href="#"
-                            ><i class="fa fa-file-pdf-o fa-lg mr-3 d-print-none"></i
+                            ><i
+                                class="fa fa-file-pdf-o fa-lg mr-3 d-print-none"
+                            ></i
                         ></a>
                     </td>
                     <td>
@@ -21,7 +23,9 @@
                             (click)="onExportExcel()"
                             title="Export to Excel"
                             href="#"
-                            ><i class="fa fa-file-excel-o fa-lg mr-3 d-print-none"></i
+                            ><i
+                                class="fa fa-file-excel-o fa-lg mr-3 d-print-none"
+                            ></i
                         ></a>
                     </td>
                     <td>
@@ -107,13 +111,11 @@
                                 >{{ welcomeEmailsData.email }}</a
                             >
                         </td>
-                        <td nowrap>
-                           New
-                        </td>
+                        <td nowrap>New</td>
                     </tr>
                 </ng-template>
             </p-table>
         </div>
     </div>
 </div>
-   <!-- refresh --> 
+<!-- refresh -->
