@@ -83,7 +83,7 @@ export class BarChartWidgetComponent implements OnInit, OnDestroy {
 
   onCopy()
   {
-    
+    return false;
   }
 }
 

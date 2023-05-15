@@ -81,7 +81,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -94,7 +94,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -107,7 +107,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -120,7 +120,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -146,7 +146,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -159,7 +159,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -172,7 +172,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -185,7 +185,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -198,7 +198,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -211,7 +211,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
+            "isPrintable": false,
             "isCopy": false
         },
         {
@@ -224,8 +224,8 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": true,
-            "isCopy": false
+            "isPrintable": false,
+            "isCopy": true
         }
     ],
     "GuamUsers": [

@@ -148,6 +148,7 @@
 
         <div *ngSwitchCase="'18'">
             <app-bar-chart-widget
+                (dataLoadCompleted)="onDataLoadedCompleted()"
                 [dashboardCardItem]="dashboardCardItem"
             ></app-bar-chart-widget>
         </div>
