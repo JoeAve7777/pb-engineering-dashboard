@@ -25,7 +25,7 @@
 </div>
 <div class="row">
     <div class="col-12" style="min-height: 330px">
-        <pbds-dataviz-line
+<!--         <pbds-dataviz-line
             [data]="medium"
             width="1200"
             height="500"
@@ -36,7 +36,12 @@
             tooltipValueFormatType="number"
             tooltipValueFormatString=".2s"
             legendPosition="bottom"
-        ></pbds-dataviz-line>
+        ></pbds-dataviz-line> -->
+
+        <!-- <p-chart type="line" [data]="data" [options]="options" (onContextMenu)="showContextMenu($event)" #chartCanvas></p-chart> -->
+        <p-chart type="line" [data]="data" #chartCanvas></p-chart>
+        <!-- <p-contextMenu #cm [model]="contextMenuModel"></p-contextMenu> -->
+
     </div>
 </div>
 <!-- refresh -->

@@ -35,6 +35,9 @@ import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total
 import { TotalScreen15Component } from "./card-screen-view/total-screen-15/total-screen-15.component";
 import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total-screen-16.component";
 
+import { ChartModule } from 'primeng/chart';
+import { ContextMenuModule } from 'primeng/contextmenu';
+
 @NgModule({
     imports: [
         SharedModule,
@@ -43,6 +46,8 @@ import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total
         TableModule,
         PbdsProgressSpinnerModule,
         PbdsDatavizModule,
+        ChartModule,
+        ContextMenuModule
     ],
     declarations: [
         HomeComponent,
