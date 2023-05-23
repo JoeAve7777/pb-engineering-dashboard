@@ -71,24 +71,7 @@ export class BarChartWidgetComponent implements OnInit, OnDestroy {
             this.barChartOb$.unsubscribe();
         }
     }
-
-    onPrint() {
-
-        let cardHtlm = document.getElementById(
-            "card-id-" + this.dashboardCardItem.id
-        ).innerHTML;
-
-        document.getElementById("print-div").innerHTML = cardHtlm;
-
-        window.print();
-
-        return false;
-    }
-
-    onCopy() {        
-        return false;
-    }
-
+  
     data: ChartData = {
         labels: ['WWW 123', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [

@@ -1,47 +1,15 @@
 <div class="row">
     <div class="col-5">
-        <label class="card-screen-caption">{{ screenCaption }}</label>
+        <i style="font-size:.8rem; color: var(--h1_color);">Right Click To Copy</i>
     </div>
     <div class="col-7 text-right">
-        <span class="card-controls-span">
-            <div class="input-group">
-                <a
-                    *ngIf="dashboardCardItem.isCopy"
-                    (click)="onCopy()"
-                    title="Copy"
-                    href="#"
-                    ><i class="fa fa-clone fa-lg mr-3 d-print-none"></i
-                ></a>
-                <a
-                    *ngIf="dashboardCardItem.isPrintable"
-                    (click)="onPrint()"
-                    title="Print"
-                    href="#"
-                    ><i class="fa fa-print fa-lg mr-3 d-print-none"></i
-                ></a>
-            </div>
-        </span>
     </div>
 </div>
 <div class="row">
-    <div class="col-12" style="min-height: 330px">
-<!--         <pbds-dataviz-line
-            [data]="medium"
-            width="1200"
-            height="500"
-            [area]="true"
-            xAxisFormatString="%b %Y"
-            yAxisFormatString=".1s"
-            tooltipHeadingFormatString="%B %e, %Y"
-            tooltipValueFormatType="number"
-            tooltipValueFormatString=".2s"
-            legendPosition="bottom"
-        ></pbds-dataviz-line> -->
-
+    <div class="col-12">
         <!-- <p-chart type="line" [data]="data" [options]="options" (onContextMenu)="showContextMenu($event)" #chartCanvas></p-chart> -->
         <p-chart type="line" [data]="data" #chartCanvas></p-chart>
         <!-- <p-contextMenu #cm [model]="contextMenuModel"></p-contextMenu> -->
-
     </div>
 </div>
 <!-- refresh -->
