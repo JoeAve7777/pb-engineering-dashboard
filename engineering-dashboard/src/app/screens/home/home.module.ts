@@ -15,7 +15,6 @@ import { DashboardThumbnailListComponent } from "./dashboard/dashboard-thumbnail
 import { DashboardCardListComponent } from "./dashboard/dashboard-card-list/dashboard-card-list.component";
 import { DashboardThumbnailComponent } from "./dashboard/dashboard-thumbnail/dashboard-thumbnail.component";
 import { DashboardCardComponent } from "./dashboard/dashboard-card/dashboard-card.component";
-import { BarChartWidgetComponent } from "./card-screen-view/bar-chart-widget/bar-chart-widget.component";
 import { DataGridPageComponent } from "./full-screen-view/data-grid-page/data-grid-page.component";
 import { SentWelcomeEmailPageComponent } from "./full-screen-view/sent-welcome-email-page/sent-welcome-email-page.component";
 import { SentWelcomeEmailComponent } from "./card-screen-view/sent-welcome-email/sent-welcome-email.component";
@@ -34,6 +33,8 @@ import { TotalScreen12Component } from "./card-screen-view/total-screen-12/total
 import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total-screen-13.component";
 import { TotalScreen15Component } from "./card-screen-view/total-screen-15/total-screen-15.component";
 import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total-screen-16.component";
+import { BarChartWidgetComponent } from "./card-screen-view/bar-chart-widget/bar-chart-widget.component";
+import { SuccessfulLoginChartComponent } from "./card-screen-view/successful-login-chart/successful-login-chart.component";
 
 import { ChartModule } from 'primeng/chart';
 import { ContextMenuModule } from 'primeng/contextmenu';
@@ -73,7 +74,8 @@ import { ContextMenuModule } from 'primeng/contextmenu';
         TotalScreen12Component,
         TotalScreen13Component,
         TotalScreen15Component,
-        TotalScreen16Component
+        TotalScreen16Component,
+        SuccessfulLoginChartComponent
     ],
     providers: [
         DatePipe,

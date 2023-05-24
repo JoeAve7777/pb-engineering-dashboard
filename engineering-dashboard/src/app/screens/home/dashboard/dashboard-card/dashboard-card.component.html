@@ -147,10 +147,10 @@
         </div>
 
         <div *ngSwitchCase="'18'">
-            <app-bar-chart-widget
+            <app-successful-login-chart
                 (dataLoadCompleted)="onDataLoadedCompleted()"
                 [dashboardCardItem]="dashboardCardItem"
-            ></app-bar-chart-widget>
+            ></app-successful-login-chart>
         </div>
 
         <div *ngSwitchDefault>
@@ -160,4 +160,4 @@
         </div>
     </div>
 </p-card>
-<!-- refresh -->
+<!-- REFRESH -->
