@@ -160,6 +160,13 @@
             ></app-user-migration-chart>
         </div>
 
+        <div *ngSwitchCase="'20'">
+            <app-guam-api-chart
+                (dataLoadCompleted)="onDataLoadedCompleted()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-guam-api-chart>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->
