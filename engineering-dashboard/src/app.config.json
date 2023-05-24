@@ -226,6 +226,19 @@
             "isExportable": false,
             "isPrintable": false,
             "isCopy": true
+        },
+        {
+            "id": "19",
+            "label": "User Migrations",
+            "description": "",
+            "iconClass": "fa-line-chart",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": false,
+            "isCopy": true
         }
     ],
     "GuamUsers": [

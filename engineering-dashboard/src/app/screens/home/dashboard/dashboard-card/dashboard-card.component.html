@@ -153,6 +153,13 @@
             ></app-successful-login-chart>
         </div>
 
+        <div *ngSwitchCase="'19'">
+            <app-user-migration-chart
+                (dataLoadCompleted)="onDataLoadedCompleted()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-user-migration-chart>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->

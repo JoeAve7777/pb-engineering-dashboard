@@ -35,6 +35,7 @@ import { TotalScreen15Component } from "./card-screen-view/total-screen-15/total
 import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total-screen-16.component";
 import { BarChartWidgetComponent } from "./card-screen-view/bar-chart-widget/bar-chart-widget.component";
 import { SuccessfulLoginChartComponent } from "./card-screen-view/successful-login-chart/successful-login-chart.component";
+import { UserMigrationChartComponent } from "./card-screen-view/user-migration-chart/user-migration-chart.component";
 
 import { ChartModule } from 'primeng/chart';
 import { ContextMenuModule } from 'primeng/contextmenu';
@@ -75,7 +76,8 @@ import { ContextMenuModule } from 'primeng/contextmenu';
         TotalScreen13Component,
         TotalScreen15Component,
         TotalScreen16Component,
-        SuccessfulLoginChartComponent
+        SuccessfulLoginChartComponent,
+        UserMigrationChartComponent
     ],
     providers: [
         DatePipe,
