@@ -25,7 +25,7 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
 
   barChartOb$!: Subscription;
 
-  screenCaption: string = "Since 1 month ago";
+  screenCaption: string = "GUAM -Since 1 month ago";
 
   constructor() {}
 
@@ -58,7 +58,7 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
       ],
       datasets: [
           {
-              label: this.screenCaption,
+              label: 'var 1',
               fill: false,
               borderColor: getComputedStyle(document.documentElement).getPropertyValue('--blue'),
               yAxisID: "y",
@@ -66,11 +66,18 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
               data: [10, 1, 20, 35, 51],
           },
            {
-               label: this.screenCaption,
+               label: 'var 2',
                fill: false,
                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--h1_color'),
                tension: 0.4,
                data: [28, 48, 40, 19, 86, 27, 90]
+           },
+           {
+               label: 'var 3',
+               fill: false,
+               borderColor: 'orange',
+               tension: 0.4,
+               data: [70, 30, 12, 95, 67, 82, 13]
            }
       ],
   };
@@ -79,7 +86,7 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
       plugins: {
           title: {
               display: true,
-              text: "Successful Logins",
+              text: this.screenCaption,
               color: getComputedStyle(
                   document.documentElement
               ).getPropertyValue("--text"),
