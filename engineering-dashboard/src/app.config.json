@@ -225,7 +225,7 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": false,
-            "isCopy": false
+            "isCopy": true
         }
     ],
     "GuamUsers": [
