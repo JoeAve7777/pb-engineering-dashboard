@@ -216,7 +216,7 @@
         },
         {
             "id": "18",
-            "label": "Sample Graph",
+            "label": "Successful Logins",
             "description": "",
             "iconClass": "fa-line-chart",
             "isExpandable": false,
@@ -225,7 +225,7 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": false,
-            "isCopy": true
+            "isCopy": false
         }
     ],
     "GuamUsers": [
