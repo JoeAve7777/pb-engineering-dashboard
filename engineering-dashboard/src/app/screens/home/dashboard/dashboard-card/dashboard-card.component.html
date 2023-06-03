@@ -181,6 +181,13 @@
             ></app-devices-chart>
         </div>
 
+        <div *ngSwitchCase="'23'">
+            <app-add-new-user-chart
+                (dataLoadCompleted)="onDataLoadedCompleted()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-add-new-user-chart>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->
