@@ -33,7 +33,6 @@ import { TotalScreen12Component } from "./card-screen-view/total-screen-12/total
 import { TotalScreen13Component } from "./card-screen-view/total-screen-13/total-screen-13.component";
 import { TotalScreen15Component } from "./card-screen-view/total-screen-15/total-screen-15.component";
 import { TotalScreen16Component } from "./card-screen-view/total-screen-16/total-screen-16.component";
-import { BarChartWidgetComponent } from "./card-screen-view/bar-chart-widget/bar-chart-widget.component";
 import { SuccessfulLoginChartComponent } from "./card-screen-view/successful-login-chart/successful-login-chart.component";
 import { UserMigrationChartComponent } from "./card-screen-view/user-migration-chart/user-migration-chart.component";
 import { GuamApiChartComponent } from "./card-screen-view/guam-api-chart/guam-api-chart.component";
@@ -61,7 +60,6 @@ import { ContextMenuModule } from 'primeng/contextmenu';
         DashboardCardListComponent,
         DashboardThumbnailComponent,
         DashboardCardComponent,
-        BarChartWidgetComponent,
         DataGridPageComponent,
         SentWelcomeEmailComponent,
         SentWelcomeEmailPageComponent,
