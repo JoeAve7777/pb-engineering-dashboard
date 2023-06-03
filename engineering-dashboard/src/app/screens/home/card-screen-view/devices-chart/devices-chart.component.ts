@@ -57,7 +57,7 @@ export class DevicesChartComponent implements OnInit, OnDestroy {
       ],
       datasets: [
           {
-              label: "var 1",
+              label: "Created",
               fill: false,
               borderColor: getComputedStyle(
                   document.documentElement
@@ -67,7 +67,7 @@ export class DevicesChartComponent implements OnInit, OnDestroy {
               data: [10, 1, 20, 35, 51],
           },
           {
-              label: "var 2",
+              label: "Logged In",
               fill: false,
               borderColor: getComputedStyle(
                   document.documentElement

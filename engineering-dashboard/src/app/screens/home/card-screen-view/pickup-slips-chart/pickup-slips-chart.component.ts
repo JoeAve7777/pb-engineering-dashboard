@@ -58,7 +58,7 @@ export class PickupSlipsChartComponent implements OnInit, OnDestroy {
       ],
       datasets: [
           {
-              label: 'var 1',
+              label: 'Created Via Login',
               fill: false,
               borderColor: getComputedStyle(document.documentElement).getPropertyValue('--blue'),
               yAxisID: "y",
@@ -66,14 +66,14 @@ export class PickupSlipsChartComponent implements OnInit, OnDestroy {
               data: [10, 1, 20, 35, 51],
           },
            {
-               label: 'var 2',
+               label: 'Created Via Device',
                fill: false,
                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--h1_color'),
                tension: 0.4,
                data: [28, 48, 40, 19, 86, 27, 90]
            },
            {
-               label: 'var 3',
+               label: 'Locked',
                fill: false,
                borderColor: 'orange',
                tension: 0.4,

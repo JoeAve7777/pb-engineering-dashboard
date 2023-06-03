@@ -242,7 +242,7 @@
         },
         {
             "id": "20",
-            "label": "GUAM",
+            "label": "GUAM API Success",
             "description": "",
             "iconClass": "fa-line-chart",
             "isExpandable": false,

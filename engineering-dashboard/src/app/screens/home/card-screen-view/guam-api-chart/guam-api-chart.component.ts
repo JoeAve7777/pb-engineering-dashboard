@@ -58,7 +58,7 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
       ],
       datasets: [
           {
-              label: 'var 1',
+              label: 'New User Created',
               fill: false,
               borderColor: getComputedStyle(document.documentElement).getPropertyValue('--blue'),
               yAxisID: "y",
@@ -66,18 +66,25 @@ export class GuamApiChartComponent implements OnInit, OnDestroy {
               data: [10, 1, 20, 35, 51],
           },
            {
-               label: 'var 2',
+               label: 'Existing User Indentified',
                fill: false,
                borderColor: getComputedStyle(document.documentElement).getPropertyValue('--h1_color'),
                tension: 0.4,
                data: [28, 48, 40, 19, 86, 27, 90]
            },
            {
-               label: 'var 3',
+               label: 'GUAM User Create Failed',
                fill: false,
                borderColor: 'orange',
                tension: 0.4,
                data: [70, 30, 12, 95, 67, 82, 13]
+           },
+           {
+               label: 'Welcome Email Successfully Sent',
+               fill: false,
+               borderColor: 'green',
+               tension: 0.4,
+               data: [100, 30, 50, 10, 70,80, 13]
            }
       ],
   };
