@@ -266,6 +266,20 @@
             "isPrintable": false,
             "isCopy": false
         }
+        ,
+        {
+            "id": "22",
+            "label": "Devices",
+            "description": "",
+            "iconClass": "fa-line-chart",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": false,
+            "isCopy": false
+        }
     ],
     "GuamUsers": [
         {
