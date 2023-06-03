@@ -58,7 +58,7 @@ export class SuccessfulLoginChartComponent implements OnInit, OnDestroy {
       ],
       datasets: [
           {
-              label: 'var 1',
+              label: 'Login Success',
               fill: false,
               borderColor: getComputedStyle(document.documentElement).getPropertyValue('--blue'),
               yAxisID: "y",
