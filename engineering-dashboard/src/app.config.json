@@ -16,8 +16,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "3",
@@ -29,8 +28,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "1",
@@ -42,8 +40,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "4",
@@ -55,8 +52,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "14",
@@ -68,8 +64,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "5",
@@ -81,8 +76,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "6",
@@ -94,8 +88,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "15",
@@ -107,8 +100,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "7",
@@ -120,8 +112,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "8",
@@ -133,8 +124,7 @@
             "isVisible": true,
             "isSearchable": true,
             "isExportable": true,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "9",
@@ -146,8 +136,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "10",
@@ -159,8 +148,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "11",
@@ -172,8 +160,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "12",
@@ -185,8 +172,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "13",
@@ -198,8 +184,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "16",
@@ -211,8 +196,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "18",
@@ -224,8 +208,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "19",
@@ -237,8 +220,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "20",
@@ -250,8 +232,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "21",
@@ -263,8 +244,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "22",
@@ -276,8 +256,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         },
         {
             "id": "23",
@@ -289,8 +268,7 @@
             "isVisible": true,
             "isSearchable": false,
             "isExportable": false,
-            "isPrintable": false,
-            "isCopy": false
+            "isPrintable": false
         }
     ],
     "GuamUsers": [
