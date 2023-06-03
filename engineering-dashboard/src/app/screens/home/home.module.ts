@@ -37,6 +37,7 @@ import { BarChartWidgetComponent } from "./card-screen-view/bar-chart-widget/bar
 import { SuccessfulLoginChartComponent } from "./card-screen-view/successful-login-chart/successful-login-chart.component";
 import { UserMigrationChartComponent } from "./card-screen-view/user-migration-chart/user-migration-chart.component";
 import { GuamApiChartComponent } from "./card-screen-view/guam-api-chart/guam-api-chart.component";
+import { PickupSlipsChartComponent } from "./card-screen-view/pickup-slips-chart/pickup-slips-chart.component";
 
 import { ChartModule } from 'primeng/chart';
 import { ContextMenuModule } from 'primeng/contextmenu';
@@ -79,7 +80,8 @@ import { ContextMenuModule } from 'primeng/contextmenu';
         TotalScreen16Component,
         SuccessfulLoginChartComponent,
         UserMigrationChartComponent,
-        GuamApiChartComponent
+        GuamApiChartComponent,
+        PickupSlipsChartComponent
     ],
     providers: [
         DatePipe,

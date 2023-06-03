@@ -1,6 +1,6 @@
 {
     "title": "PB Engineering Dashboard",
-    "version": "1.0.19",
+    "version": "1.0.20",
     "copyRight": "©1996-2022 Pitney Bowes Inc. All rights reserved.",
     "apiBaseUrl": "http://localhost:4000/",
     "apiAuthenticate": "https://g5td3nfq5m.execute-api.us-east-1.amazonaws.com/dev/fetchuserdetails?email=@email&password=@password",
@@ -225,7 +225,7 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": false,
-            "isCopy": true
+            "isCopy": false
         },
         {
             "id": "19",
@@ -238,7 +238,7 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": false,
-            "isCopy": true
+            "isCopy": false
         },
         {
             "id": "20",
@@ -251,7 +251,20 @@
             "isSearchable": false,
             "isExportable": false,
             "isPrintable": false,
-            "isCopy": true
+            "isCopy": false
+        },
+        {
+            "id": "21",
+            "label": "Pickup slips",
+            "description": "",
+            "iconClass": "fa-line-chart",
+            "isExpandable": false,
+            "isAvailable": true,
+            "isVisible": true,
+            "isSearchable": false,
+            "isExportable": false,
+            "isPrintable": false,
+            "isCopy": false
         }
     ],
     "GuamUsers": [

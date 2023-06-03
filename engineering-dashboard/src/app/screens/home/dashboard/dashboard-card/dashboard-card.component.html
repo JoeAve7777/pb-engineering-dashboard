@@ -167,6 +167,13 @@
             ></app-guam-api-chart>
         </div>
 
+        <div *ngSwitchCase="'21'">
+            <app-pickup-slips-chart
+                (dataLoadCompleted)="onDataLoadedCompleted()"
+                [dashboardCardItem]="dashboardCardItem"
+            ></app-pickup-slips-chart>
+        </div>
+
         <div *ngSwitchDefault>
             <p>
                 <!-- Future Release -->
